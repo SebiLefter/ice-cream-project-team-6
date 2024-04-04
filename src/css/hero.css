@@ -1,0 +1,161 @@
+:root {
+  --font-family: 'DM Sans', sans-serif;
+  --second-font-family: 'Titan One', sans-serif;
+  --hero-bg-color: #ffb8ca;
+  --hero-ice-cream-bg-color: #ffa5ba;
+  --hero-title-text-color: #ffffff;
+  --hero-title-color-red: #d41443;
+  --hero-text-color: #ffffff;
+  --hero-arrow-btn: #ffffff;
+  --hero-button-bg-color: #d41443;
+  --hero-button-active-bg-color: #ffffff;
+  --hero-button-text: #ffffff;
+  --hero-button-active-text: #d41443;
+  --hero-number-color-text: #d41443;
+}
+ul {
+  list-style-type: none;
+}
+.hero {
+  background-color: var(--hero-bg-color);
+}
+.ice-cream-made {
+  font-family: var(--second-font-family);
+  font-weight: 400;
+  font-size: 38px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--hero-title-text-color);
+  line-height: 90%;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.passion {
+  font-family: var(--second-font-family);
+  font-weight: 400;
+  font-size: 58px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--hero-title-color-red);
+  line-height: 90%;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.hero-buttons ul {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  border-width: 0px;
+  padding-left: 0px;
+}
+
+.hero-products-btn {
+  border-radius: 20px;
+  width: 107px;
+  height: 40px;
+  background-color: var(--hero-button-bg-color);
+  color: var(--hero-button-text);
+  border-width: 0px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-howitsmade-btn {
+  border-radius: 20px;
+  width: 138px;
+  height: 40px;
+  background-color: var(--hero-button-bg-color);
+  color: var(--hero-button-text);
+  border-width: 0px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+.hero-products-btn:hover {
+  background-color: var(--hero-button-active-bg-color);
+  color: var(--hero-button-active-text);
+}
+.hero-howitsmade-btn:hover {
+  background-color: var(--hero-button-active-bg-color);
+  color: var(--hero-button-active-text);
+}
+.hero-left-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--hero-text-color);
+}
+.hero-arrow-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border-width: 0px;
+  background-color: var(--hero-arrow-btn);
+  /* display: flex;
+  justify-content: center; */
+}
+.hero-number {
+  font-family: var(--second-font-family);
+  font-weight: 400;
+  font-size: 46px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: right;
+  color: var(--hero-number-color-text);
+}
+.hero-cafes-trucks-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: right;
+  color: var(--hero-text-color);
+}
+
+h1 span {
+  display: flex;
+}
+
+.hero {
+  display: flex;
+  height: 664px;
+  position: relative;
+  max-width: 1280px;
+  padding-left: 16px;
+}
+.hero-milk-pitcher {
+  display: flex;
+  flex: column;
+  align-items: center;
+}
+.hero-right {
+  display: flex;
+}
+.hero-tasty {
+  position: absolute;
+  right: 16px;
+  bottom: 0px;
+}
+.hero-ice-cream {
+  position: absolute;
+  right: 328px;
+  bottom: 0px;
+}
+.hero-cafes-trucks {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 16px;
+  top: 68px;
+}
+.cafes {
+  display: flex;
+  flex-direction: column;
+}
+.trucks {
+  display: flex;
+  flex-direction: column;
+}
