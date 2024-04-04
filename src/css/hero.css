@@ -7,10 +7,11 @@
   --hero-title-color-red: #d41443;
   --hero-text-color: #ffffff;
   --hero-arrow-btn: #ffffff;
-  --hero-button-bg-color: #d41443;
-  --hero-button-active-bg-color: #ffffff;
-  --hero-button-text: #ffffff;
-  --hero-button-active-text: #d41443;
+  --hero-products-btn-bg-color: #d41443;
+  --hero-him-btn-bg-color: #ffffff;
+  --hero-button-active-bg-color: #ecebeb;
+  --hero-products-button-text: #ffffff;
+  --hero-him-button-text: #d41443;
   --hero-number-color-text: #d41443;
 }
 ul {
@@ -51,8 +52,8 @@ ul {
   border-radius: 20px;
   width: 107px;
   height: 40px;
-  background-color: var(--hero-button-bg-color);
-  color: var(--hero-button-text);
+  background-color: var(--hero-products-btn-bg-color);
+  color: var(--hero-products-button-text);
   border-width: 0px;
   font-family: var(--font-family);
   font-weight: 400;
@@ -65,8 +66,8 @@ ul {
   border-radius: 20px;
   width: 138px;
   height: 40px;
-  background-color: var(--hero-button-bg-color);
-  color: var(--hero-button-text);
+  background-color: var(--hero-him-btn-bg-color);
+  color: var(--hero-him-button-text);
   border-width: 0px;
   font-family: var(--font-family);
   font-weight: 400;
@@ -74,13 +75,8 @@ ul {
   text-align: center;
   cursor: pointer;
 }
-.hero-products-btn:hover {
-  background-color: var(--hero-button-active-bg-color);
-  color: var(--hero-button-active-text);
-}
 .hero-howitsmade-btn:hover {
   background-color: var(--hero-button-active-bg-color);
-  color: var(--hero-button-active-text);
 }
 .hero-left-text {
   font-family: var(--font-family);
@@ -95,9 +91,15 @@ ul {
   border-radius: 50%;
   border-width: 0px;
   background-color: var(--hero-arrow-btn);
-  /* display: flex;
-  justify-content: center; */
+  display: flex;
+  justify-content: center;
 }
+.cafes {
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+}
+
 .hero-number {
   font-family: var(--second-font-family);
   font-weight: 400;
@@ -106,7 +108,18 @@ ul {
   text-transform: uppercase;
   text-align: right;
   color: var(--hero-number-color-text);
+  /* z-index: 9; */
 }
+.hero-elipse {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+}
+
 .hero-cafes-trucks-text {
   font-family: var(--font-family);
   font-weight: 400;
@@ -114,11 +127,9 @@ ul {
   text-align: right;
   color: var(--hero-text-color);
 }
-
 h1 span {
   display: flex;
 }
-
 .hero {
   display: flex;
   height: 664px;
@@ -150,11 +161,9 @@ h1 span {
   position: absolute;
   right: 16px;
   top: 68px;
+  gap: 15px;
 }
-.cafes {
-  display: flex;
-  flex-direction: column;
-}
+
 .trucks {
   display: flex;
   flex-direction: column;
