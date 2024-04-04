@@ -97,7 +97,13 @@ ul {
 .cafes {
   display: flex;
   flex-direction: column;
-  /* position: relative; */
+  position: relative;
+  padding-bottom: 25px;
+}
+.trucks {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .hero-number {
@@ -108,16 +114,16 @@ ul {
   text-transform: uppercase;
   text-align: right;
   color: var(--hero-number-color-text);
-  /* z-index: 9; */
+  z-index: 9;
 }
 .hero-elipse {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: #ffffff;
-  /* position: absolute;
-  top: 0;
-  left: 0; */
+  position: absolute;
+  top: -10px;
+  right: -10px;
 }
 
 .hero-cafes-trucks-text {
@@ -161,10 +167,5 @@ h1 span {
   position: absolute;
   right: 16px;
   top: 68px;
-  gap: 15px;
-}
-
-.trucks {
-  display: flex;
-  flex-direction: column;
+  gap: 25px;
 }
