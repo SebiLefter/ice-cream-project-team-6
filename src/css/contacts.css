@@ -1,0 +1,115 @@
+#partners-contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.partners-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 24px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 368px;
+  height: 538px;
+  box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
+  background: #fff;
+}
+.partners-category {
+  border-radius: 6px;
+  width: 75px;
+  height: 28px;
+  background: #f0d1a5;
+}
+.partners-category-food-truck {
+  border-radius: 6px;
+  width: 138px;
+  height: 28px;
+  background: #c2e297;
+}
+.partners-category-food-truck h3 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.partners-category h3 {
+  width: 77px;
+  height: 28px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+.partners-card-content {
+  width: 288px;
+  height: 528px;
+}
+.partners-location {
+  width: 288px;
+  height: 88px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.partners-location p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: #000;
+  margin: 0;
+}
+.partners-location h4 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: #000;
+  margin: 0;
+}
+.partners-opening-hours {
+  width: 167px;
+  height: 132px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.timming {
+  width: 167px;
+  height: 60px;
+  margin: 0;
+}
+.partners-contact-info {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.teltext,
+.mailtext {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 183%;
+  color: #907e82;
+}
+.teltext:hover {
+  color: rgba(212, 20, 67, 1);
+}
+.mailtext:hover {
+  color: rgba(212, 20, 67, 1);
+}
+@media (min-width: 768px) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
