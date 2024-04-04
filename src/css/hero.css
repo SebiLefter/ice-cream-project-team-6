@@ -1,0 +1,20 @@
+:root {
+  --font-family: 'DM Sans', sans-serif;
+  --second-font-family: 'Titan One', sans-serif;
+  --hero-bg-color: #ffb8ca;
+  --hero-ice-cream-bg-color: #ffa5ba;
+  --hero-title-text-color: #ffffff;
+  --hero-title-color-red: #d41443;
+  --hero-text-color: #ffffff;
+  --hero-arrow-btn: #ffffff;
+  --hero-button-bg-color: #d41443;
+  --hero-button-active-bg-color: #ffffff;
+  --hero-button-text: #ffffff;
+  --hero-button-active-text: #d41443;
+}
+ul {
+  list-style-type: none;
+}
+.hero {
+  background-color: var(--hero-bg-color);
+}
