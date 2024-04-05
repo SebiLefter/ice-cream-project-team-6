@@ -1,0 +1,98 @@
+:root {
+    --font-family: 'DM Sans', sans-serif;
+    --second-font-family: 'Titan One', sans-serif;
+    --about-label:#ffa5ba;
+    --about-title:#d41443;
+    --about-bg-color:#FFF5F6;
+    --about-p-color:#000000;
+    --about-span-color:#907E82;
+    --about-btn-hover-color:#ECEBEB;
+
+  }
+  .about-container{
+    width: 1200px;
+    height: 1229px;
+    background-color: var(--about-bg-color);
+
+  }
+  .about-content{
+    background-image: url(/src/images/about-background.png);
+    background-repeat: no-repeat;
+    background-size:1200px 521px;
+    display: flex;
+  }
+  .about-headings{ 
+    width: 534px;  
+    height: 116px;
+    border: 400px; 
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+  }
+  .about-label{
+    width: 351px;
+    height: 34px;
+    font-family: var(--second-font-family);
+    color:var(--about-label);
+    font-weight: 400;   
+    font-size: 27px;
+    letter-spacing: 3px;
+    margin-left: 90px;
+         
+  }
+  .about-title{
+
+    width: 534px;
+    height: 66px;
+    font-family: var(--second-font-family);
+    color:var(--about-title);
+    font-weight: 400;
+    font-size: 53px;
+    letter-spacing: 6px; 
+          
+  }
+  .about-p{
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--about-p-color);
+    font-size: 16px;
+    margin-bottom: 32px;
+    padding-top: 16px;
+    
+  }
+  .about-span{
+    font-family: var(--font-family);
+    color: var(--about-span-color);
+    font-weight: 500;
+    font-size: 14px;
+    
+  }
+  .about-btn{
+    width: 176px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #ffffff;
+    color: var(--about-title);
+    border: transparent;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    align-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .about-btn:hover{
+    background-color: var(--about-btn-hover-color);
+  }
+.cow{
+    width: 501px;
+    height: 501px;
+    margin-top: 60px;
+    margin-left: 16px;
+}
+.about-text{
+    margin-left: 99px;
+    margin-top: 150px;
+}
