@@ -1,57 +1,159 @@
-<div class="hero">
-  <div class="hero-left">
-        <h1 class="ice-cream-made">
-        <span>ice cream</span>
-        <span>made with</span>
-        <span class="passion">passion</span>
-        </h1>
-        <div class="hero-buttons">
-        <ul>
-            <li><button class="hero-products-btn">Products</button></li>
-            <li><button class="hero-howitsmade-btn">How it's made?</button></li>
-        </ul>
-        </div>
-        <div class="hero-milk-pitcher">
+<div class="global-header">
+  <div class="header">
+    <div>
+      <a href="index.html" class="header-logo">
+        <svg>
+          <use href="./icons/nav.svg#icon-Group"></use>
+        </svg>
+      </a>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="">About us</a>
+        </li>
+        <li>
+          <a href="">How it’s made?</a>
+        </li>
+        <li>
+          <a href="">Our products</a>
+        </li>
+        <li>
+          <a href="#partners-contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div>
+      <button type="button" class="buy-now-btn" data-modal-open>
+        <span class="header-btn-text">Buy now &#8250;</span>
+        <!-- <svg class="header-btn-icon">
+          <use href="./icons/btn-nav.svg"></use>
+        </svg> -->
+      </button>
+      <div class="modal is-hidden" data-modal>
+          <div class="modal-content">
+            <button class="close-btn" data-modal-close>
+              <span>&#10005;</span>
+            </button>
+            <h2 class="modal-heading">
+              Ice Cream Delight: Buy Now!
+            </h2>
             <div>
-                <img src="/src/images/milk_pitcher.png" alt="milk-pitcher" />
-            </div>
-            <div>
-                <p class="hero-left-text">
-                indulge in a scoop of ice <br />
-                cream made with passion and <br />
-                treat your taste buds to an <br />
-                unforgettable experience!
-                </p>
-                <button type="button" class="hero-arrow-btn">
-                <svg></svg>
-                </button>
-            </div>
+              <form class="modal-form">
+                <div class="form-group">
+                  <label for="name" class="form-label">Name</label>
+                  <input name="name" type="text" id="name" class="form-input" required/>
+                  <svg class="form-icon">
+                    <use href="./icons/icons.svg.svg#icon-name"></use>
+                  </svg>
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input name="phone" type="tel" id="phone" class="form-input" required/>
+                  <svg class="form-icon">
+                    <use href="./icons/icons.svg.svg#icon-phone"></use>
+                  </svg>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input name="email" type="email" id="email" class="form-input" required/>
+                  <svg class="form-icon">
+                    <use href="./icons/icons.svg.svg#icon-email"></use>
+                  </svg>
+                </div>
+                <div class="form-group">
+                  <label for="comment" class="form-label">Order</label>
+                  <textarea name="textarea" id="comment" cols="10" rows="3" placeholder="Place order here" class="form-textarea"></textarea>
+                </div>
+                <div>
+                  <label class="agree-check">
+                    <input
+                      type="checkbox"
+                      name="agreement"
+                      value="agree"
+                      class="checkmark"
+                      required
+                    />
+                    <svg class="check-icon">
+                      <use href="./icons/icons.svg.svg#icon-checkbox"></use>
+                    </svg>
+                    <p class="check-text">
+                      I accept the terms and conditions of the
+                      <span class="check-policy">Privacy Policy</span>
+                    </p>
+                  </label>
+                </div>
+                </div>
+                  <button class="modal-send-btn" type="submit">Send</button>
+                </div>
+              </form>
+            
         </div>
     </div>
-    <div class="hero-right">
-      <div class="hero-ice-cream">
-        <img src="/src/images/ice_cream.png" alt="cone-ice-cream" />
+  </div>
+  <div class="hero">
+    <div class="hero-left">
+          <h1 class="ice-cream-made">
+          <span>ice cream</span>
+          <span>made with</span>
+          <span class="passion">passion</span>
+          </h1>
+          <div class="hero-buttons">
+          <ul>
+              <li>
+                <a href="#partners-contact"><button class="hero-products-btn">Products</button></a>
+              </li>
+              <li>
+                <a href="#partners-contact"><button class="hero-howitsmade-btn">How it's made?</button></a>
+              </li>
+          </ul>
+          </div>
+          <div class="hero-milk-pitcher">
+              <div>
+                  <img src="/src/images/milk_pitcher.png" alt="milk-pitcher" />
+              </div>
+              <div>
+                  <p class="hero-left-text">
+                  indulge in a scoop of ice <br />
+                  cream made with passion and <br />
+                  treat your taste buds to an <br />
+                  unforgettable experience!
+                  </p>
+                  <button type="button" class="hero-arrow-btn">
+                  <svg></svg>
+                  </button>
+              </div>
+          </div>
       </div>
-      <div class="hero-cafes-trucks">
-        <ul>
-          <li> 
-            <div class="cafes">
-                <span class="hero-elipse"></span>
-                <span class="hero-number">16</span>
-                <span class="hero-cafes-trucks-text">cafes</span>
-            </div>
-          </li>
-          <li>
-            <div class="trucks">
-                <span class="hero-elipse"></span>
-                <span class="hero-number">23</span>
-                <span class="hero-cafes-trucks-text">food trucks</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="hero-tasty">
-        <img src="/src/images/tasty.png" alt="girl-eating-an-ice-cream" />
+      <div class="hero-right">
+        <div>
+          <img class="hero-ice-cream" src="/src/images/ice_cream.png" alt="cone-ice-cream" />
+          <img class="hero-pink-elipse" src="/src/images/pink_elipse.png" alt="pink-elipse" height="534px">
+        </div>
+        <div class="hero-cafes-trucks">
+          <ul>
+            <li>
+              <div class="cafes">
+                  <span class="hero-elipse"></span>
+                  <span class="hero-number">16</span>
+                  <span class="hero-cafes-trucks-text">cafes</span>
+              </div>
+            </li>
+            <li>
+              <div class="trucks">
+                  <span class="hero-elipse"></span>
+                  <span class="hero-number">23</span>
+                  <span class="hero-cafes-trucks-text">food trucks</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="hero-tasty">
+          <img src="/src/images/tasty.png" alt="girl-eating-an-ice-cream" />
+        </div>
       </div>
     </div>
   </div>
