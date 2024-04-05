@@ -2,7 +2,7 @@
     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <symbol id="```" viewBox="0 0 116 32">
-            <path fill="#fff" style="fill: var(--color1, #fff)"
+            <path fill="#d41443" style="fill: var(--color1, #fff)"
                 d="M16 0h83.636c8.837 0 16 7.163 16 16s-7.163 16-16 16h-83.636c-8.837 0-16-7.163-16-16s7.163-16 16-16z">
             </path>
             <path fill="#d41443" style="fill: var(--color2, #d41443)"
