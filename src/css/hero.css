@@ -98,6 +98,7 @@ a {
   color: var(--hero-title-text-color);
   line-height: 90%;
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding-top: 50px;
 }
 .passion {
   font-family: var(--second-font-family);
@@ -217,6 +218,7 @@ h1 span {
   display: flex;
   flex: column;
   align-items: center;
+  padding-top: 40px;
 }
 .hero-right {
   display: flex;
