@@ -86,6 +86,7 @@ a {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 16px;
+  z-index: 11;
 }
 .nav-bar a,
 .nav-bar a:visited {
@@ -233,12 +234,9 @@ h1 span {
 .hero-milk-pitcher img {
   animation: pitcher 1s linear infinite;
 }
-.hero-ice-cream img {
-  animation: icecream 1s linear infinite;
-}
-.hero-tasty {
-  animation: tasty 1s linear infinite;
-}
+/* .hero-ice-cream img {
+  animation: pitcher 1s linear infinite;
+} */
 
 @keyframes pitcher {
   100% {
@@ -251,7 +249,7 @@ h1 span {
     transform: translateY(-2px);
   }
 }
-@keyframes tasty {
+/* @keyframes tasty {
   100% {
     transform: translateY(-10px);
   }
@@ -272,7 +270,7 @@ h1 span {
   0% {
     transform: translateY(-5px);
   }
-}
+} */
 .hero-right {
   display: flex;
 }
@@ -280,12 +278,21 @@ h1 span {
   position: absolute;
   right: 16px;
   bottom: 0px;
+  z-index: 10;
+  animation: pitcher 1s linear infinite;
 }
 .hero-ice-cream {
   position: absolute;
   right: 328px;
   bottom: 0px;
+  z-index: 10;
 }
+.hero-pink-elipse {
+  position: absolute;
+  z-index: 1;
+  right: 170px;
+}
+
 .hero-cafes-trucks {
   display: flex;
   flex-direction: column;

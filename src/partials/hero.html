@@ -36,7 +36,7 @@
       <div class="modal is-hidden" data-modal>
           <div class="modal-content">
             <button class="close-btn" data-modal-close>
-              <i data-feather="x"></i>
+              <span>&#10005;</span>
             </button>
             <h2 class="modal-heading">
               Ice Cream Delight: Buy Now!
@@ -45,7 +45,7 @@
               <form class="modal-form">
                 <div class="form-group">
                   <label for="name" class="form-label">Name</label>
-                  <input name="name" type="text" id="name" class="form-input" required />
+                  <input name="name" type="text" id="name" class="form-input" required/>
                   <svg class="form-icon">
                     <use href="./icons/icons.svg.svg#icon-name"></use>
                   </svg>
@@ -87,7 +87,7 @@
                   </label>
                 </div>
                 </div>
-                  <button type="submit" class="modal-send-btn">Send</button>
+                  <button class="modal-send-btn" type="submit">Send</button>
                 </div>
               </form>
             
@@ -129,9 +129,9 @@
           </div>
       </div>
       <div class="hero-right">
-        <div class="hero-ice-cream">
-          <img src="/src/images/ice_cream.png" alt="cone-ice-cream" />
-          <!-- <img src="/src/images/pink_elipse.png" alt="pink-elipse"> -->
+        <div>
+          <img class="hero-ice-cream" src="/src/images/ice_cream.png" alt="cone-ice-cream" />
+          <img class="hero-pink-elipse" src="/src/images/pink_elipse.png" alt="pink-elipse">
         </div>
         <div class="hero-cafes-trucks">
           <ul>
