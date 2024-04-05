@@ -47,6 +47,7 @@ a {
   align-items: center;
   margin: 0px 16px;
   padding-top: 50px;
+  z-index: 11;
 }
 .header ul {
   display: flex;
@@ -222,7 +223,6 @@ h1 span {
   display: flex;
   height: 664px;
   position: relative;
-  max-width: 1280px;
   padding-left: 16px;
 }
 .hero-milk-pitcher {
@@ -279,7 +279,7 @@ h1 span {
   right: 16px;
   bottom: 0px;
   z-index: 10;
-  animation: pitcher 1s linear infinite;
+  /* animation: pitcher 1s linear infinite; */
 }
 .hero-ice-cream {
   position: absolute;
@@ -291,6 +291,7 @@ h1 span {
   position: absolute;
   z-index: 1;
   right: 170px;
+  bottom: 160px;
 }
 
 .hero-cafes-trucks {
