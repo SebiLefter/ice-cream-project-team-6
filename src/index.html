@@ -1,20 +1,45 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
+    <title>Ice cream shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/advantages.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/contacts.css" />
+
     <script type="module" src="./index.js"></script>
   </head>
 
   <body>
-    <h1>Example title</h1>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-    <include src="./partials/sebastian.html"></include>
+    <header>
+      <include src="./partials/hero.html"></include>
+    </header>
+    <main>
+      <include src="./partials/about.html"></include>
+    </main>
+    <footer></footer>
+
+    <include src="./partials/advantages.html"></include>
     <include src="./partials/ciprian.html"></include>
     <include src="./partials/manuela.html"></include>
     <include src="./partials/felicia.html"></include>
+    <include src="./partials/ionela.html"></include>
+    <include src="./partials/adrian.html"></include>
   </body>
 </html>
