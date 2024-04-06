@@ -95,9 +95,15 @@
   padding: 10px 0 10px 0;
   width: 200px;
 }
+
 .schedule p {
   margin: 10px 0;
 }
+.stroke {
+  height: 1px;
+  background-color: #e1e1e1;
+}
+
 .schedule strong {
   font-family: var(--font-family);
   font-weight: 500;
@@ -109,10 +115,6 @@
 .partners-contact-info {
   padding-top: 32px;
   padding-bottom: 32px;
-}
-.stroke {
-  height: 1px;
-  background-color: #e1e1e1;
 }
 .teltext,
 .mailtext {
@@ -127,4 +129,9 @@
 }
 .mailtext:hover {
   color: rgba(212, 20, 67, 1);
+}
+@media (min-width: 768px) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
