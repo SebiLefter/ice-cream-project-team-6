@@ -1,5 +1,5 @@
 <!-- About -->
-<section class="about-container">
+<section class="about-container" id="about">
   <div class="about-headings">
     <p class="about-label">TRADITION AND LOVE</p>
     <h1 class="about-title">HOW IT'S MADE?</h1>
@@ -22,7 +22,15 @@
       </span>
 
       <div>
-        <button class="about-btn">Read more ></button>
+        <button class="about-btn" data-about-open>Read more ></button>
+      </div>
+      <div class="modal is-hidden" data-about>
+        <div class="modal-about-content">
+          <button class="about-close-btn" data-about-close>
+            <span class="x-btn">&times;</span>
+          </button>
+          <h2 class="modal-about-title">HOW IT'S MADE?</h2>
+        </div>
       </div>
     </div>
   </div>
