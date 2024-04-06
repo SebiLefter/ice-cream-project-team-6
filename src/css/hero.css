@@ -508,6 +508,9 @@ h1 span {
   color: var(--header-text-color-hover);
   cursor: pointer;
   border-style: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .modal-send-btn:hover {
   background-color: var(--header-btn-active-bg-color);
