@@ -179,7 +179,14 @@ a {
   background-color: var(--hero-arrow-btn);
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
+.hero-arrow-btn svg {
+  width: 26px;
+  height: 26px;
+  fill: #d41443;
+}
+
 .cafes {
   display: flex;
   flex-direction: column;
