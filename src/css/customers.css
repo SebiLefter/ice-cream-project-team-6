@@ -1,0 +1,28 @@
+
+.section_customer {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text_customer {
+  background-color: #e1e1e1;
+  width: 968px;
+  height: 138px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.first img {
+  width: 85px;
+  height: 85px;
+}
+.slider img{
+  overflow: hidden;
+}
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
