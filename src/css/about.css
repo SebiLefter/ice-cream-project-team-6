@@ -103,17 +103,13 @@
   position: sticky;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 10;  
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   z-index: 10;
-  margin-top: 6%;
-
-
-  
-  
+  margin-top: 6%;    
 }
 .modal-about-content {
   padding: 16px;
