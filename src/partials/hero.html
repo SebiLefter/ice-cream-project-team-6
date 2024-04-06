@@ -26,6 +26,25 @@
         </li>
       </ul>
     </nav>
+    <button
+    class="burger-menu-btn js-open-menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+  >
+    <svg
+      width="24"
+      height="24"
+      fill="currentColor"
+      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+  </button>
     <div>
       <button type="button" class="buy-now-btn" data-modal-open>
         <span class="header-btn-text">Buy now &#8250;</span>
@@ -33,7 +52,7 @@
       </button>
       <div class="modal is-hidden" data-modal>
           <div class="modal-content">
-            <button class="close-btn" data-modal-close>
+            <button class="modal-close-btn" data-modal-close>
               <span>&#10005;</span>
             </button>
             <h2 class="modal-heading">

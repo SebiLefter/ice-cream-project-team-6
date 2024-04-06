@@ -3,3 +3,25 @@
 @import url(/src/css/hero.css);
 @import url(/src/css/footer.css);
 @import url(/src/css/contacts.css);
+@import url(/src/css/mobile-menu.css);
+
+@media screen and (max-width: 320px) {
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  .menu-for-mobile {
+    display: none;
+  }
+  .burger-menu-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .menu-for-mobile {
+    display: none;
+  }
+}
