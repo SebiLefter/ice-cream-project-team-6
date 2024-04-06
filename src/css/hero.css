@@ -47,7 +47,7 @@ a {
   align-items: center;
   margin: 0px 16px;
   padding-top: 50px;
-  z-index: 11;
+  z-index: 3;
 }
 .header ul {
   display: flex;
@@ -87,7 +87,7 @@ a {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 16px;
-  z-index: 11;
+  z-index: 3;
 }
 .nav-bar a,
 .nav-bar a:visited {
@@ -101,6 +101,9 @@ a {
   height: 8px;
   fill: #d41443;
 } */
+.hero-left {
+  z-index: 3;
+}
 .ice-cream-made {
   font-family: var(--second-font-family);
   font-weight: 400;
@@ -278,14 +281,14 @@ h1 span {
   position: absolute;
   right: 16px;
   bottom: 0px;
-  z-index: 10;
+  z-index: 4;
   /* animation: pitcher 1s linear infinite; */
 }
 .hero-ice-cream {
   position: absolute;
   right: 328px;
   bottom: 0px;
-  z-index: 10;
+  z-index: 2;
 }
 .hero-pink-elipse {
   position: absolute;
