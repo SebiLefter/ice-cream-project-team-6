@@ -14,11 +14,16 @@ ul {
   background-color: var(--advantages-bg-color);
 }
 
+.title-hidden {
+  display: none;
+}
+
 .advantages ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 80px;
+  margin: 0;
 }
 
 .advantages h2 {
