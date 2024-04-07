@@ -6,6 +6,40 @@
 @import url(/src/css/mobile-menu.css);
 
 @media screen and (max-width: 320px) {
+  .nav-bar {
+    display: none;
+  }
+  .buy-now-btn {
+    display: none;
+  }
+  .hero-cafes-trucks {
+    display: none;
+  }
+  .hero-tasty {
+    display: none;
+  }
+  .hero-milk-pitcher {
+    display: none;
+  }
+  .ice-cream-made {
+    font-size: 26px;
+  }
+  .passion {
+    font-size: 46px;
+  }
+  .hero-products-btn {
+    width: 62px;
+    height: 24px;
+    font-size: 8px;
+  }
+  .hero-howitsmade-btn {
+    width: 82px;
+    height: 24px;
+    font-size: 8px;
+  }
+  .hero-ice-cream {
+    width: 171px;
+  }
 }
 @media screen and (max-width: 480px) {
 }
