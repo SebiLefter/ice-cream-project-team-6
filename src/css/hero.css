@@ -65,16 +65,14 @@ a {
 .burger-menu-btn {
   height: 40px;
   width: 40px;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
   background-color: transparent;
   border: none;
-  border-radius: 50%;
   outline: none;
   color: #d41443;
   cursor: pointer;
+  position: absolute;
+  top: auto;
+  right: 20px;
 }
 
 .burger-menu-btn:hover,

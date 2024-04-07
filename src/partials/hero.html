@@ -152,8 +152,28 @@
       </div>
       <div class="hero-right">
         <div>
-          <img class="hero-ice-cream" src="/src/images/ice_cream.png" alt="cone-ice-cream" />
-          <img class="hero-pink-elipse" src="/src/images/pink_elipse.png" alt="pink-elipse" height="534px">
+          <div class="hero-ice-cream-tot">
+            <picture class="hero-ice-cream">
+              <!-- Desktop -->
+              <source media="(min-width:1280px)" srcset="/src/images/icecream-d.png, /src/images/icecream-d-2x.png">
+              <!-- Tablet -->
+              <source media="(min-width:768px)" srcset="/src/images/icecream-t.png, /src/images/icecream-t-2x.png">
+              <!-- Mobile -->
+              <source media="(min-width:480px)" srcset="/src/images/iceam-m.png, /src/images/iceam-m-2x.png">
+              <img src="/src/images/ice_cream.png" alt="cone-ice-cream" />
+            </picture>
+          </div>
+          <picture  class="hero-pink-elipse">
+            <!-- Desktop -->
+            <source media="(min-width:1280px)" srcset="/src/images/elipse-d.png, /src/images/elipse-d-2x.png ">
+            <!-- Tablet -->
+            <source media="(min-width:768px)" srcset="/src/images/elipse-t.png, /src/images/elipse-t-2x.png">
+            <!-- Mobile -->
+            <source media="(max-width:480px)" srcset="/src/images/elipse-m.png, /src/images/elipse-m-2x.png">
+            <img src="/src/images/pink_elipse.png" alt="pink-elipse" height="534px">
+          </picture>
+          
+          
         </div>
         <div class="hero-cafes-trucks">
           <ul>
