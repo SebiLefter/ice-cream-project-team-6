@@ -30,6 +30,9 @@
   --checkbox-text-color: #8e8f99;
   --checkbox-policy-txt-color: #ffa5ba;
 }
+html {
+  scroll-behavior: smooth;
+}
 ul {
   list-style-type: none;
 }
@@ -363,7 +366,7 @@ h1 span {
   align-items: center;
 }
 
-.close-btn {
+.modal-close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -505,6 +508,9 @@ h1 span {
   color: var(--header-text-color-hover);
   cursor: pointer;
   border-style: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .modal-send-btn:hover {
   background-color: var(--header-btn-active-bg-color);
