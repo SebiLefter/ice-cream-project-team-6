@@ -6,7 +6,7 @@
   };
 
   refsMobile.openModalBtn.addEventListener('click', toggleMobileModal);
-  refs.closeModalBtn.addEventListener('click', toggleMobileModal);
+  refsMobile.closeModalBtn.addEventListener('click', toggleMobileModal);
 
   function toggleMobileModal() {
     refsMobile.modal.classList.toggle('is-hidden');

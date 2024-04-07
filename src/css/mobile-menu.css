@@ -4,6 +4,7 @@
   position: absolute;
   z-index: 99;
   margin-top: 27px;
+  width: 254px;
 }
 .menu-container {
   position: fixed;
@@ -34,6 +35,7 @@
 .mobile-menu svg {
   position: absolute;
   z-index: -1;
+  width: 100%;
 }
 .mobile-menu .link {
   font-weight: 700;
@@ -78,7 +80,7 @@
   cursor: pointer;
 }
 .mobile-stoke {
-  fill: #e1e1e1;
+  outline-color: #e1e1e1;
   width: 254px;
   height: 2px;
 }
@@ -87,7 +89,7 @@
   visibility: hidden;
   scale: 1.05;
 }
-.modal {
+.mobile-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -100,7 +102,7 @@
   background: var(--navy-blue-modal);
   transition: transform var(--transition);
 }
-.modal-content {
+.mobile-modal-content {
   position: relative;
   background-color: var(--modal-background);
   border-radius: 4px;
@@ -131,7 +133,7 @@
   margin-bottom: 24px;
   cursor: pointer;
 }
-.modal-heading {
+.mobile-modal-heading {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -142,21 +144,21 @@
   margin-bottom: 16px;
 }
 
-.form-group {
+.mobile-form-group {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 4px;
   margin-bottom: 8px;
 }
-.form-input:focus {
+.mobile-form-input:focus {
   outline: none;
   border-color: #ffa5ba;
 }
-.form-input:focus + .form-icon {
+.mobile-form-input:focus + .mobile-form-icon {
   color: #ffa5ba;
 }
-.form-icon {
+.mobile-form-icon {
   position: absolute;
   padding: 3px 0px;
   width: 18px;
@@ -166,24 +168,24 @@
   color: var(--form-icon-color);
   color: var(--header-btn-text);
 }
-.form-input {
+.mobile-form-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
   height: 40px;
 }
-.form-group .form-input {
+.mobile-form-group .mobile-form-input {
   left: 0.5rem;
   padding-left: 2.5rem;
 }
-.form-label {
+.mobile-form-label {
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: var(--form-label-color);
 }
 
-.form-textarea {
+.mobile-form-textarea {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16667;
@@ -194,20 +196,20 @@
   width: 360px;
   height: 120px;
 }
-.form-textarea:focus {
+.mobile-form-textarea:focus {
   outline: none;
   border-color: #ffa5ba;
 }
-.agree-check {
+.mobile-agree-check {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 15px;
 }
-.agree-check .checkmark {
+.mobile-agree-check .mobile-checkmark {
   appearance: none;
 }
-.agree-check .check-icon {
+.mobile-agree-check .mobile-check-icon {
   width: 16px;
   height: 16px;
   margin-right: 8px;
@@ -216,11 +218,11 @@
   border: 1px solid rgba(46, 47, 66, 0.4);
   cursor: pointer;
 }
-.agree-check .checkmark:focus + .check-icon,
-.agree-check .checkmark:checked:focus + .check-icon {
+.mobile-agree-check .mobile-checkmark:focus + .mobile-check-icon,
+.mobile-agree-check .mobile-checkmark:checked:focus + .mobile-check-icon {
   outline: 1px solid rgba(46, 47, 66, 0.4);
 }
-.agree-check .checkmark:checked + .check-icon {
+.mobile-agree-check .mobile-checkmark:checked + .mobile-check-icon {
   background-color: var(--checkbox-color);
   border-color: var(--checkbox-color);
   fill: var(--checkbox-color);
@@ -228,20 +230,20 @@
   stroke: var(--checkbox-color);
   stroke-width: 0.2;
 }
-.check-text {
+.mobile-check-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: var(--checkbox-text-color);
 }
-.check-policy {
+.mobile-check-policy {
   line-height: 1.33333;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--checkbox-policy-txt-color);
 }
-.modal-send-btn {
+.mobile-modal-send-btn {
   border-radius: 20px;
   padding: 16px 32px;
   width: 169px;
@@ -260,7 +262,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.modal-send-btn:hover {
+.mobile-modal-send-btn:hover {
   background-color: var(--header-btn-active-bg-color);
   transform: scale(1.05);
   transition: background-color var(--transition);
