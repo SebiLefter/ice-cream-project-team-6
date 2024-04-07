@@ -4,6 +4,7 @@
 @import url(/src/css/footer.css);
 @import url(/src/css/contacts.css);
 @import url(/src/css/mobile-menu.css);
+@import url(/src/css/customers.css);
 
 @media screen and (max-width: 320px) {
   .nav-bar {
