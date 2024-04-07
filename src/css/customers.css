@@ -1,7 +1,10 @@
-.root {
+:root {
   --font-family: 'DM Sans', sans-serif;
   --second-font-family: 'Titan One', sans-serif;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --hover-input: #d31342;
+  --input: #d9d9d9;
+  --background-text: #e5e5e5;
 }
 
 .section_customer {
@@ -11,12 +14,10 @@
   align-items: center;
 }
 
-
+/*css for text customer*/
 .text_customer {
-  background-color: #e5e5e5;
+  background-color: var(--background-text);
   border-radius: 4px;
-  width: 60.5rem;
-  height: 8.625rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
@@ -25,24 +26,25 @@
 
 .underline {
   position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
   font-family: var(--font-family);
   font-size: 1rem;
   line-height: 2;
-  white-space: 4px;  
+  white-space: 4px;
+  text-decoration: underline;
 }
-
 
 .underline::before {
-  content:url(../icons/quotes.svg);  
+  content: url(../icons/quotes.svg);
 }
-
 
 .nombre-custumer {
   font-family: var(--font-family);
-  font-size:1.3rem;
+  font-size: 1.3rem;
   margin: 40px;
 }
-
+/*css For slider*/
 .first img {
   width: 85px;
   height: 85px;
@@ -57,14 +59,13 @@
 }
 
 .slides {
-  width: 100%;
-  height: 100px;
+  width: 500%;
+  height: 500px;
   display: flex;
 }
 
 .slides input {
   display: none;
-
 }
 
 .slide {
@@ -72,18 +73,17 @@
   transition: var(--transition);
 }
 
-
 /*css for manual slide navigation*/
 .navigation-manual {
   position: absolute;
-  width: 400px;
-  margin-top: 300px;
+  margin-top:390px;
   display: flex;
   justify-content: center;
 }
 
 .manual-btn {
-  border: 2px solid rgb(110, 18, 18);
+  border:2px solid var(--input);
+  background: var(--input);
   padding: 5px;
   border-radius: 10px;
   transition: var(--transition);
@@ -95,48 +95,24 @@
 }
 
 .manual-btn:hover {
-  background-color: red;
+  border: var(--hover-input);
+  background-color: var(--hover-input);
 }
 
-#radio1:checked~.first {
+.home {
+  display: block;
+  position: relative;
+}
+
+
+#radio1:checked ~ .first {
   margin-left: 0;
 }
 
-#radio2:checked~.first {
+#radio2:checked ~ .first {
   margin-left: -20%;
 }
 
-#radio3:checked~.first {
+#radio3:checked ~ .first {
   margin-left: -40%;
-}
-
-/*navigation for automatic navigation*/
-.navigation-auto {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  width: 400px;
-  margin-top: 200px;
-}
-
-.navigation-auto div {
-  border: 2px solid;
-  border-radius: 10px;
-  transition: 1s;
-}
-
-.navigation-auto div:not(:last-cild) {
-  margin-right: 40px;
-}
-
-#radio1:checked~.navigation-auto .auto-btn1 {
-  background-color: red;
-}
-
-#radio2:checked~.navigation-auto .auto-btn2 {
-  background-color: red;
-}
-
-#radio3:checked~.navigation-auto .auto-btn3 {
-  background-color: red;
 }
