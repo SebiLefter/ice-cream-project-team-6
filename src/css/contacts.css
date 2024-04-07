@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --font-family: 'DM Sans', sans-serif;
     --second-font-family: 'Titan One', sans-serif
     --about-label:#ffa5ba;
@@ -7,7 +7,8 @@
     --about-p-color:#000000;
     --about-span-color:#907E82;
     --about-btn-hover-color:#ECEBEB;
-}
+} */
+
 #partners-contact {
   display: flex;
   flex-wrap: wrap;
