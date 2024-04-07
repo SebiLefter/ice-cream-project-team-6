@@ -2,24 +2,135 @@
   <div class="menu-container js-menu-container" id="mobile-menu">
     <span class="close-btn js-close-menu">&times;</span>
     <div class="mobile-buy">
-      <button class="buynow" href="#">Buy now</button>
+      <button class="buynow-btn" data-mobile-open>Buy now</button>
     </div>
+    <div class="modal is-hidden" data-mobile>
+      <div class="modal-content">
+        <button class="mobile-close-btn" data-mobile-close>
+          <span>&#10005;</span>
+        </button>
+        <h2 class="modal-heading">Ice Cream Delight: Buy Now!</h2>
+        <div>
+          <form class="modal-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input
+                name="name"
+                type="text"
+                id="name"
+                class="form-input"
+                required
+              />
+              <svg class="form-icon">
+                <use href="./icons/icons.svg.svg#icon-name"></use>
+              </svg>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone</label>
+              <input
+                name="phone"
+                type="tel"
+                id="phone"
+                class="form-input"
+                required
+              />
+              <svg class="form-icon">
+                <use href="./icons/icons.svg.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input
+                name="email"
+                type="email"
+                id="email"
+                class="form-input"
+                required
+              />
+              <svg class="form-icon">
+                <use href="./icons/icons.svg.svg#icon-email"></use>
+              </svg>
+            </div>
+            <div class="form-group">
+              <label for="comment" class="form-label">Order</label>
+              <textarea
+                name="textarea"
+                id="comment"
+                cols="10"
+                rows="3"
+                placeholder="Place order here"
+                class="form-textarea"
+              ></textarea>
+            </div>
+            <div>
+              <label class="agree-check">
+                <input
+                  type="checkbox"
+                  name="agreement"
+                  value="agree"
+                  class="checkmark"
+                  required
+                />
+                <svg class="check-icon">
+                  <use href="./icons/icons.svg.svg#icon-checkbox"></use>
+                </svg>
+                <p class="check-text">
+                  I accept the terms and conditions of the
+                  <span class="check-policy">Privacy Policy</span>
+                </p>
+              </label>
+            </div>
+
+            <button class="modal-send-btn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <nav class="mobile-menu">
       <ul>
         <li>
-          <a href="#" class="link">Home</a>
+          <svg
+            width="254"
+            height="44"
+            viewBox="0 0 254 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 1H254M254 43H0" stroke="#E18298" />
+          </svg>
+          <!-- <div class="mobile-stroke"></div> -->
+          <a href="#hero-header" class="link">Home</a>
         </li>
         <li>
-          <a href="#" class="link">About us</a>
+          <a href="#about" class="link">About us</a>
         </li>
         <li>
-          <a href="#" class="link">How it's made?</a>
+          <svg
+            width="254"
+            height="44"
+            viewBox="0 0 254 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 1H254M254 43H0" stroke="#E18298" />
+          </svg>
+          <a href="#about" class="link">How it's made?</a>
         </li>
         <li>
           <a href="#" class="link">Our products</a>
         </li>
         <li>
-          <a href="#" class="link">Contact</a>
+          <svg
+            width="254"
+            height="44"
+            viewBox="0 0 254 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 1H254M254 43H0" stroke="#E18298" />
+          </svg>
+          <a href="#partners-contact" class="link">Contact</a>
         </li>
       </ul>
     </nav>
