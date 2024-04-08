@@ -17,3 +17,6 @@
     list-style-type: none;
 }
 
+.gallery-1 {
+    display: flex;
+}
