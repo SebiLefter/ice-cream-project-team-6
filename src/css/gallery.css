@@ -19,4 +19,10 @@
 
 .gallery-1 {
     display: flex;
+    justify-content: center;
+}
+
+.gallery-2 {
+    display: flex;
+    margin-left:420px;
 }
