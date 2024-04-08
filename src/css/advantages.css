@@ -12,6 +12,7 @@ ul {
 
 .advantages {
   background-color: var(--advantages-bg-color);
+  padding: 180px;
 }
 
 .title-hidden {
