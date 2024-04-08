@@ -65,16 +65,14 @@ a {
 .burger-menu-btn {
   height: 40px;
   width: 40px;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
   background-color: transparent;
   border: none;
-  border-radius: 50%;
   outline: none;
   color: #d41443;
   cursor: pointer;
+  position: absolute;
+  top: auto;
+  right: 20px;
 }
 
 .burger-menu-btn:hover,
@@ -516,4 +514,132 @@ h1 span {
   background-color: var(--header-btn-active-bg-color);
   transform: scale(1.05);
   transition: background-color var(--transition);
+}
+@media screen and (max-width: 480px) {
+  .nav-bar {
+    display: none;
+  }
+  .buy-now-btn {
+    display: none;
+  }
+  .hero-cafes-trucks {
+    display: none;
+  }
+  .hero-tasty {
+    display: none;
+  }
+  .hero-milk-pitcher {
+    display: none;
+  }
+  .ice-cream-made {
+    font-size: 26px;
+  }
+  .passion {
+    font-size: 46px;
+  }
+  .hero-products-btn {
+    width: 62px;
+    height: 24px;
+    font-size: 8px;
+  }
+  .hero-howitsmade-btn {
+    width: 82px;
+    height: 24px;
+    font-size: 8px;
+  }
+
+  .hero-ice-cream {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .hero-pink-elipse {
+    position: absolute;
+    right: 0;
+    bottom: 75px;
+  }
+  .header-logo {
+    z-index: 4;
+  }
+  .burger-menu-btn {
+    z-index: 4;
+  }
+  .hero-left {
+    margin-top: 140px;
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+}
+@media screen and (min-width: 481px) and (max-width: 1280px) {
+  .menu-for-mobile {
+    display: none;
+  }
+  .burger-menu-btn {
+    position: absolute;
+    right: 200px;
+    top: auto;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .ice-cream-made {
+    font-size: 22px;
+  }
+  .passion {
+    font-size: 42px;
+  }
+  .hero-number {
+    font-size: 28px;
+  }
+  .hero-cafes-trucks-text {
+    font-size: 8px;
+  }
+  .hero-elipse {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+  }
+  .hero-products-btn {
+    width: 62px;
+    height: 24px;
+    font-size: 8px;
+  }
+  .hero-howitsmade-btn {
+    width: 82px;
+    height: 24px;
+    font-size: 8px;
+  }
+  .hero-left-text {
+    font-size: 8px;
+    line-height: 1.5;
+  }
+  .hero-arrow-btn {
+    width: 18px;
+    height: 18px;
+  }
+  .global-header {
+    height: 664px;
+  }
+  .hero-tasty {
+    position: absolute;
+    bottom: 50px;
+    right: 32px;
+  }
+  .hero-ice-cream {
+    position: absolute;
+    bottom: 100px;
+    right: 303px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .menu-for-mobile {
+    display: none;
+  }
+  .burger-menu-btn {
+    display: none;
+  }
 }
