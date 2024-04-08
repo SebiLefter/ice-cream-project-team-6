@@ -38,7 +38,7 @@
 .underline::before {
   content: url(../icons/quotes.svg);
 }
-
+/*
 .underline::after {
   content: "" ;
   position: absolute;
@@ -46,9 +46,7 @@
   width: 100%;
   height: 2px;
   background-color: #d31342;
-
-
-}
+}*/
 
 .nombre-custumer {
   font-family: var(--font-family);
