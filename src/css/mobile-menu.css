@@ -12,7 +12,6 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 20px;
   background-color: #e17992;
   z-index: 999;
   transform: translateX(100%);
@@ -43,12 +42,13 @@
   line-height: 111%;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-top: 5px;
+  padding-top: 10px;
   text-decoration: none;
   color: #fff;
   gap: 40px;
   display: block;
   justify-content: center;
+  padding-left: 20px;
   /* z-index: 2; */
 }
 .mobile-menu .link:hover,
@@ -84,6 +84,10 @@
   width: 254px;
   height: 2px;
 }
+/* hr.line-mobile-menu {
+  width: 254px;
+  margin: auto;
+} */
 /* Modal */
 .is-hidden {
   visibility: hidden;
@@ -93,7 +97,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 95vw;
   height: 100vh;
   z-index: 99999;
   display: flex;
