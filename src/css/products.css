@@ -1,0 +1,13 @@
+.upper-prod{
+    display: flex;
+    justify-content: center;
+}
+.title-prod{
+    display: flex;
+    justify-content: center;
+}
+.product-type{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    display: grid;
+}
