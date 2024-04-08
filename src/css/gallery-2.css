@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background: linear-gradient(to bottom, #fff5f6 20%, #fff 80%);
+  /* background: linear-gradient(to bottom, #fff5f6 20%, #fff 80%); */
 }
 .gallery-mara {
   position: relative;
