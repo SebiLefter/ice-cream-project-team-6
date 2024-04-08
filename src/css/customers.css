@@ -106,24 +106,23 @@
 .home {
   position: absolute;
   margin-left: 0.125rem;
-  margin-top: 0.120rem;
+  margin-top: 0.12rem;
 }
 
-#radio1:checked~.first {
+#radio1:checked ~ .first {
   margin-left: 0;
 }
 
-#radio2:checked~.first {
+#radio2:checked ~ .first {
   margin-left: -20%;
 }
 
-#radio3:checked~.first {
+#radio3:checked ~ .first {
   margin-left: -40%;
 }
 
 /* Styles for tablet*/
 @media screen and (min-width: 769px) and (max-width: 1200px) {
-
   .navigation-manual {
     margin-top: 24rem;
   }
@@ -134,5 +133,4 @@
   .navigation-manual {
     margin-top: 22rem;
   }
-
 }
