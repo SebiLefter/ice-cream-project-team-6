@@ -1,4 +1,4 @@
-<div class="global-header">
+<div class="global-header" id="hero-header">
   <div class="header">
     <div>
       <a href="index.html" class="header-logo">
@@ -10,13 +10,13 @@
     <nav class="nav-bar">
       <ul>
         <li>
-          <a href="">Home</a>
+          <a href="#hero-header">Home</a>
         </li>
         <li>
-          <a href="">About us</a>
+          <a href="#about">About us</a>
         </li>
         <li>
-          <a href="">How it’s made?</a>
+          <a href="#about">How it’s made?</a>
         </li>
         <li>
           <a href="">Our products</a>
@@ -26,6 +26,25 @@
         </li>
       </ul>
     </nav>
+    <button
+    class="burger-menu-btn js-open-menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+  >
+    <svg
+      width="24"
+      height="24"
+      fill="currentColor"
+      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+  </button>
     <div>
       <button type="button" class="buy-now-btn" data-modal-open>
         <span class="header-btn-text">Buy now &#8250;</span>
@@ -33,7 +52,7 @@
       </button>
       <div class="modal is-hidden" data-modal>
           <div class="modal-content">
-            <button class="close-btn" data-modal-close>
+            <button class="modal-close-btn" data-modal-close>
               <span>&#10005;</span>
             </button>
             <h2 class="modal-heading">
@@ -84,9 +103,9 @@
                     </p>
                   </label>
                 </div>
-                <div>
+                
                   <button class="modal-send-btn" type="submit">Send</button>
-                </div>
+                
               </form>
             </div>
           </div>
@@ -106,7 +125,7 @@
                 <a href="#partners-contact"><button class="hero-products-btn">Products</button></a>
               </li>
               <li>
-                <a href="#partners-contact"><button class="hero-howitsmade-btn">How it's made?</button></a>
+                <a href="#about"><button class="hero-howitsmade-btn">How it's made?</button></a>
               </li>
           </ul>
           </div>
@@ -121,16 +140,40 @@
                   treat your taste buds to an <br />
                   unforgettable experience!
                   </p>
-                  <button type="button" class="hero-arrow-btn">
-                  <svg></svg>
-                  </button>
+                  <a href="#advantages-section">
+                    <button type="button" class="hero-arrow-btn">
+                    <svg>
+                      <use href="./icons/arrow-right.svg#icon-arrow-right"></use>
+                    </svg>
+                    </button>
+                  </a>
               </div>
           </div>
       </div>
       <div class="hero-right">
         <div>
-          <img class="hero-ice-cream" src="/src/images/ice_cream.png" alt="cone-ice-cream" />
-          <img class="hero-pink-elipse" src="/src/images/pink_elipse.png" alt="pink-elipse" height="534px">
+          <div class="hero-ice-cream-tot">
+            <picture class="hero-ice-cream">
+              <!-- Desktop -->
+              <source media="(min-width:1280px)" srcset="/src/images/icecream-d.png, /src/images/icecream-d-2x.png">
+              <!-- Tablet -->
+              <source media="(min-width:768px)" srcset="/src/images/icecream-t.png, /src/images/icecream-t-2x.png">
+              <!-- Mobile -->
+              <source media="(min-width:480px)" srcset="/src/images/iceam-m.png, /src/images/iceam-m-2x.png">
+              <img src="/src/images/ice_cream.png" alt="cone-ice-cream" />
+            </picture>
+          </div>
+          <picture  class="hero-pink-elipse">
+            <!-- Desktop -->
+            <source media="(min-width:1280px)" srcset="/src/images/elipse-d.png, /src/images/elipse-d-2x.png ">
+            <!-- Tablet -->
+            <source media="(min-width:768px)" srcset="/src/images/elipse-t.png, /src/images/elipse-t-2x.png">
+            <!-- Mobile -->
+            <source media="(max-width:480px)" srcset="/src/images/elipse-m.png, /src/images/elipse-m-2x.png">
+            <img src="/src/images/pink_elipse.png" alt="pink-elipse" height="534px">
+          </picture>
+          
+          
         </div>
         <div class="hero-cafes-trucks">
           <ul>
@@ -151,7 +194,15 @@
           </ul>
         </div>
         <div class="hero-tasty">
-          <img src="/src/images/tasty.png" alt="girl-eating-an-ice-cream" />
+          <picture class="hero-tasty">
+              <!-- Desktop -->
+              <source media="(min-width:1280px)" srcset="/src/images/tasty-d.png, /src/images/tasty-d-2x.png">
+              <!-- Tablet -->
+              <source media="(min-width:768px)" srcset="/src/images/tasty-t.png, /src/images/tasty-t-2x.png">
+              <source media="(min-width:480px)" srcset="/src/images/tasty-t.png, /src/images/tasty-t-2x.png">
+              <img src="/src/images/tasty.png" alt="girl-eating-an-ice-cream" />
+            </picture>
+          
         </div>
       </div>
     </div>
