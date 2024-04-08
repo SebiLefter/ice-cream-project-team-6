@@ -1,0 +1,25 @@
+.gallery-section-mara {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #fff5f6 20%, #fff 80%);
+}
+.gallery-mara {
+  position: relative;
+  max-width: 1013px;
+  max-height: 100%;
+  z-index: 10;
+  margin-top: -4.5rem;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.sorbet {
+  border-radius: 18%;
+}
+.first-distinct {
+  margin-bottom: -16px;
+}
+.second-distinct {
+  margin-bottom: 76px;
+}
