@@ -1,0 +1,70 @@
+:root {
+  --font-family: 'DM Sans', sans-serif;
+  --second-font-family: 'Titan One', sans-serif;
+  --advantages-bg-color: #fff5f6;
+  --advantages-title-color: #d41443;
+  --advantages-paragraph-text-color: #000000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.advantages {
+  background-color: var(--advantages-bg-color);
+}
+
+.title-hidden {
+  display: none;
+}
+
+.advantages ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 22px;
+  margin: 0;
+}
+
+.advantages h2 {
+  font-family: var(--second-font-family);
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 66%;
+  letter-spacing: 0.04em;
+  color: var(--advantages-title-color);
+}
+
+.advantages p {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--advantages-paragraph-text-color);
+}
+
+.advantages .icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Stilizare tabletă și device-uri peste 768px */
+@media screen and (min-width: 768px) {
+  .advantages ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+}
+
+/* Stilizare tavletă și device-uri peste 1200px */
+@media screen and (min-width: 1200px) {
+  .advantages ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 80px;
+  }
+}

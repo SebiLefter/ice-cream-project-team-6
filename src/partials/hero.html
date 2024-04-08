@@ -1,50 +1,209 @@
-<div class="hero">
-  <div class="hero-left">
-    <h1 class="ice-cream-made">
-      <span>ice cream</span>
-      <span>made with</span>
-      <span class="passion">passion</span>
-    </h1>
-    <div class="hero-buttons">
+<div class="global-header" id="hero-header">
+  <div class="header">
+    <div>
+      <a href="index.html" class="header-logo">
+        <svg>
+          <use href="./icons/nav.svg#icon-Group"></use>
+        </svg>
+      </a>
+    </div>
+    <nav class="nav-bar">
       <ul>
-        <li><button class="hero-products-btn">Products</button></li>
-        <li><button class="hero-howitsmade-btn">How it's made?</button></li>
+        <li>
+          <a href="#hero-header">Home</a>
+        </li>
+        <li>
+          <a href="#about">About us</a>
+        </li>
+        <li>
+          <a href="#about">How it’s made?</a>
+        </li>
+        <li>
+          <a href="">Our products</a>
+        </li>
+        <li>
+          <a href="#partners-contact">Contact</a>
+        </li>
       </ul>
-    </div>
-    <div class="hero-milk-pitcher">
-      <div>
-        <img src="/src/images/milk_pitcher.jpg" alt="milk-pitcher" />
+    </nav>
+    <button
+    class="burger-menu-btn js-open-menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+  >
+    <svg
+      width="24"
+      height="24"
+      fill="currentColor"
+      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+  </button>
+    <div>
+      <button type="button" class="buy-now-btn" data-modal-open>
+        <span class="header-btn-text">Buy now &#8250;</span>
+      
+      </button>
+      <div class="modal is-hidden" data-modal>
+          <div class="modal-content">
+            <button class="modal-close-btn" data-modal-close>
+              <span>&#10005;</span>
+            </button>
+            <h2 class="modal-heading">
+              Ice Cream Delight: Buy Now!
+            </h2>
+            <div>
+              <form class="modal-form">
+                <div class="form-group">
+                  <label for="name" class="form-label">Name</label>
+                  <input name="name" type="text" id="name" class="form-input" required/>
+                  <svg class="form-icon">
+                    <use href="./icons/icons.svg.svg#icon-name"></use>
+                  </svg>
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input name="phone" type="tel" id="phone" class="form-input" required/>
+                  <svg class="form-icon">
+                    <use href="./icons/icons.svg.svg#icon-phone"></use>
+                  </svg>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input name="email" type="email" id="email" class="form-input" required/>
+                  <svg class="form-icon">
+                    <use href="./icons/icons.svg.svg#icon-email"></use>
+                  </svg>
+                </div>
+                <div class="form-group">
+                  <label for="comment" class="form-label">Order</label>
+                  <textarea name="textarea" id="comment" cols="10" rows="3" placeholder="Place order here" class="form-textarea"></textarea>
+                </div>
+                <div>
+                  <label class="agree-check">
+                    <input
+                      type="checkbox"
+                      name="agreement"
+                      value="agree"
+                      class="checkmark"
+                      required
+                    />
+                    <svg class="check-icon">
+                      <use href="./icons/icons.svg.svg#icon-checkbox"></use>
+                    </svg>
+                    <p class="check-text">
+                      I accept the terms and conditions of the
+                      <span class="check-policy">Privacy Policy</span>
+                    </p>
+                  </label>
+                </div>
+                
+                  <button class="modal-send-btn" type="submit">Send</button>
+                
+              </form>
+            </div>
+          </div>
+       </div>
+  </div>
+  </div>
+  <div class="hero">
+    <div class="hero-left">
+          <h1 class="ice-cream-made">
+          <span>ice cream</span>
+          <span>made with</span>
+          <span class="passion">passion</span>
+          </h1>
+          <div class="hero-buttons">
+          <ul>
+              <li>
+                <a href="#partners-contact"><button class="hero-products-btn">Products</button></a>
+              </li>
+              <li>
+                <a href="#about"><button class="hero-howitsmade-btn">How it's made?</button></a>
+              </li>
+          </ul>
+          </div>
+          <div class="hero-milk-pitcher">
+              <div>
+                  <img src="/src/images/milk_pitcher.png" alt="milk-pitcher" />
+              </div>
+              <div>
+                  <p class="hero-left-text">
+                  indulge in a scoop of ice <br />
+                  cream made with passion and <br />
+                  treat your taste buds to an <br />
+                  unforgettable experience!
+                  </p>
+                  <a href="#advantages-section">
+                    <button type="button" class="hero-arrow-btn">
+                    <svg>
+                      <use href="./icons/arrow-right.svg#icon-arrow-right"></use>
+                    </svg>
+                    </button>
+                  </a>
+              </div>
+          </div>
       </div>
-      <div>
-        <p class="hero-left-text">
-          indulge in a scoop of ice <br />
-          cream made with passion and <br />
-          treat your taste buds to an <br />
-          unforgettable experience!
-        </p>
-        <button type="button" class="hero-arrow-btn">
-          <svg></svg>
-        </button>
-      </div>
-    </div>
-    <div class="hero-right">
-      <div class="hero-ice-cream">
-        <img src="/src/images/ice_cream.jpg" alt="cone-ice-cream" />
-      </div>
-      <div class="hero-cafes-trucks">
-        <ul>
-          <li class="cafes">
-            <span>16</span>
-            <span>cafes</span>
-          </li>
-          <li class="trucks">
-            <span>23</span>
-            <span>food trucks</span>
-          </li>
-        </ul>
-      </div>
-      <div class="hero-tasty">
-        <img src="/src/images/sooo_tasty.jpg" alt="girl-eating-an-ice-cream" />
+      <div class="hero-right">
+        <div>
+          <div class="hero-ice-cream-tot">
+            <picture class="hero-ice-cream">
+              <!-- Desktop -->
+              <source media="(min-width:1280px)" srcset="/src/images/icecream-d.png, /src/images/icecream-d-2x.png">
+              <!-- Tablet -->
+              <source media="(min-width:768px)" srcset="/src/images/icecream-t.png, /src/images/icecream-t-2x.png">
+              <!-- Mobile -->
+              <source media="(min-width:480px)" srcset="/src/images/iceam-m.png, /src/images/iceam-m-2x.png">
+              <img src="/src/images/ice_cream.png" alt="cone-ice-cream" />
+            </picture>
+          </div>
+          <picture  class="hero-pink-elipse">
+            <!-- Desktop -->
+            <source media="(min-width:1280px)" srcset="/src/images/elipse-d.png, /src/images/elipse-d-2x.png ">
+            <!-- Tablet -->
+            <source media="(min-width:768px)" srcset="/src/images/elipse-t.png, /src/images/elipse-t-2x.png">
+            <!-- Mobile -->
+            <source media="(max-width:480px)" srcset="/src/images/elipse-m.png, /src/images/elipse-m-2x.png">
+            <img src="/src/images/pink_elipse.png" alt="pink-elipse" height="534px">
+          </picture>
+          
+          
+        </div>
+        <div class="hero-cafes-trucks">
+          <ul>
+            <li>
+              <div class="cafes">
+                  <span class="hero-elipse"></span>
+                  <span class="hero-number">16</span>
+                  <span class="hero-cafes-trucks-text">cafes</span>
+              </div>
+            </li>
+            <li>
+              <div class="trucks">
+                  <span class="hero-elipse"></span>
+                  <span class="hero-number">23</span>
+                  <span class="hero-cafes-trucks-text">food trucks</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="hero-tasty">
+          <picture class="hero-tasty">
+              <!-- Desktop -->
+              <source media="(min-width:1280px)" srcset="/src/images/tasty-d.png, /src/images/tasty-d-2x.png">
+              <!-- Tablet -->
+              <source media="(min-width:768px)" srcset="/src/images/tasty-t.png, /src/images/tasty-t-2x.png">
+              <source media="(min-width:480px)" srcset="/src/images/tasty-t.png, /src/images/tasty-t-2x.png">
+              <img src="/src/images/tasty.png" alt="girl-eating-an-ice-cream" />
+            </picture>
+          
+        </div>
       </div>
     </div>
   </div>
