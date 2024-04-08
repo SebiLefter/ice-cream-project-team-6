@@ -1,13 +1,19 @@
-.gallery section .container {
+.gallery section {
     width: 1280px;
     height:430px;
-    background-image: linear-gradient(to bottom,#fff5f6 20%, #fff 80%);
+    background: linear-gradient(to bottom,#fff5f6 20%, #fff 80%);
     border-radius: 20px;
-    display: flex;
 }
 
 
-.ul {
-    list-style: none;
+.gallery section .container {
+    width:1013px;
+    height:430px;
+    display:flex;
+    justify-content: center;
+}
+
+.unstyle-list {
+    list-style-type: none;
 }
 
