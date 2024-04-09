@@ -2,14 +2,14 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://MaraSoc.github.io/ice-cream-project-team-6",
+  "homepage": "https://github.com/MaraSoc/ice-cream-project-team-6",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /ice-cream-project-team-6/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaraSoc/ice-cream-project-team-6.git"
+    "url": "git+https://github.com/MaraSoc/ice-cream-project-team-6"
   },
   "keywords": [],
   "author": "MaraSoc",

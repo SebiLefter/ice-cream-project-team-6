@@ -12,6 +12,7 @@ ul {
 
 .advantages {
   background-color: var(--advantages-bg-color);
+  padding: 180px;
 }
 
 .title-hidden {
@@ -20,9 +21,9 @@ ul {
 
 .advantages ul {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  gap: 80px;
+  gap: 22px;
   margin: 0;
 }
 
@@ -47,4 +48,24 @@ ul {
 .advantages .icon {
   width: 50px;
   height: 50px;
+}
+
+/* Stilizare tabletă și device-uri peste 768px */
+@media screen and (min-width: 768px) {
+  .advantages ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+}
+
+/* Stilizare tavletă și device-uri peste 1200px */
+@media screen and (min-width: 1200px) {
+  .advantages ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 80px;
+  }
 }

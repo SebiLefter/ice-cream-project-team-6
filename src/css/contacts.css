@@ -1,8 +1,9 @@
-
 #partners-contact {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  width: 100%;
 }
 .partners-card {
   border-radius: 24px;
@@ -100,34 +101,39 @@
   color: #907e82;
 }
 
-@media only screen and (max-width: 480px) {
-  .partners-card {
-    width: calc(
-      100% - 20px
-    ); /* Un singur card pe rând pentru ecranele mai mici de 480px */
+/* Stilizare pentru desktop */
+@media screen and (min-width: 1200px) {
+  ..partners-contact {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 75%;
+    z-index: 999;
+    /* Afișare pe verticală */
+    /* Aliniere centrală */
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+/* Stilizare pentru tablete */
+@media screen and (min-width: 769px) and (max-width: 1199px) {
   .partners-card {
-    width: calc(
-      50% - 20px
-    ); /* Două carduri pe rând pentru ecranele între 480px și 768px */
+    width: 30%;
+    width: 224px;
+    height: 528px;
+  }
+  .stroke {
+    width: 160px; /* Afișarea pe 3 coloane */
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1280px) {
+/* Stilizare pentru mobile */
+@media screen and (max-width: 768px) {
   .partners-card {
-    width: calc(
-      33.33% - 20px
-    ); /* Trei carduri pe rând pentru ecranele între 768px și 1280px */
+    width: 280px;
+    height: 412px; /* Afișarea pe un singur rând */
   }
-}
-
-@media only screen and (min-width: 1280px) {
-  .partners-card {
-    width: calc(
-      25% - 20px
-    ); /* Patru carduri pe rând pentru ecranele mai mari de 1280px */
+  .partners-card-content {
+    width: 216px;
+    height: 332px;
   }
 }

@@ -1,70 +1,74 @@
-.root {
+:root {
   --font-family: 'DM Sans', sans-serif;
   --second-font-family: 'Titan One', sans-serif;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --hover-input: #d31342;
+  --input: #d9d9d9;
+  --background-text: #e5e5e5;
 }
 
 .section_customer {
-  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
-
+/*css for text customer*/
 .text_customer {
-  background-color: #e5e5e5;
-  border-radius: 4px;
-  width: 60.5rem;
-  height: 8.625rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
+  background-color: var(--background-text);
+  border-radius: 0.25rem;
+  margin-left: 7.25rem;
+  margin-right: 7.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
 .underline {
   position: relative;
+  margin-left: 8%;
+  margin-right: 8%;
   font-family: var(--font-family);
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 2;
-  white-space: 4px;  
+  white-space: 0.25rem;
+  text-decoration: underline;
 }
-
 
 .underline::before {
-  content:url(../icons/quotes.svg);  
+  content: url(../icons/quotes.svg);
 }
-
 
 .nombre-custumer {
   font-family: var(--font-family);
-  font-size:1.3rem;
-  margin: 40px;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
+/*css For slider*/
 .first img {
-  width: 85px;
-  height: 85px;
+  width: 5.313rem;
+  height: 5.313rem;
 }
 
 .slider {
-  margin-top: 20px;
+  margin-top: 1rem;
   border-radius: 50%;
-  width: 85px;
-  height: 85px;
+  width: 5.313rem;
+  height: 5.313rem;
   overflow: hidden;
 }
 
 .slides {
-  width: 100%;
-  height: 100px;
+  width: 500%;
+  height: 31.25rem;
   display: flex;
 }
 
 .slides input {
   display: none;
-
 }
 
 .slide {
@@ -72,71 +76,61 @@
   transition: var(--transition);
 }
 
-
 /*css for manual slide navigation*/
+
 .navigation-manual {
   position: absolute;
-  width: 400px;
-  margin-top: 300px;
+  margin-top: 40rem;
   display: flex;
   justify-content: center;
 }
 
 .manual-btn {
-  border: 2px solid rgb(110, 18, 18);
-  padding: 5px;
+  border: 1px solid var(--input);
+  background: var(--input);
+  padding: 7px;
   border-radius: 10px;
   transition: var(--transition);
   cursor: pointer;
 }
 
 .manual-btn:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 0.7rem;
 }
 
 .manual-btn:hover {
-  background-color: red;
+  border: var(--hover-input);
+  background-color: var(--hover-input);
 }
 
-#radio1:checked~.first {
+.home {
+  position: absolute;
+  margin-left: 0.125rem;
+  margin-top: 0.12rem;
+}
+
+#radio1:checked ~ .first {
   margin-left: 0;
 }
 
-#radio2:checked~.first {
+#radio2:checked ~ .first {
   margin-left: -20%;
 }
 
-#radio3:checked~.first {
+#radio3:checked ~ .first {
   margin-left: -40%;
 }
 
-/*navigation for automatic navigation*/
-.navigation-auto {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  width: 400px;
-  margin-top: 200px;
+/* Styles for tablet*/
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .navigation-manual {
+    margin-top: 24rem;
+  }
 }
 
-.navigation-auto div {
-  border: 2px solid;
-  border-radius: 10px;
-  transition: 1s;
-}
-
-.navigation-auto div:not(:last-cild) {
-  margin-right: 40px;
-}
-
-#radio1:checked~.navigation-auto .auto-btn1 {
-  background-color: red;
-}
-
-#radio2:checked~.navigation-auto .auto-btn2 {
-  background-color: red;
-}
-
-#radio3:checked~.navigation-auto .auto-btn3 {
-  background-color: red;
+/*Styles for desctop*/
+@media screen and (min-width: 1200px) {
+  .navigation-manual {
+    margin-top: 22rem;
+  }
 }
