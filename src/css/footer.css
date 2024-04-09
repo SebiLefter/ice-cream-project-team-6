@@ -17,6 +17,9 @@
 
 .global-footer {
   background-color: var(--footer-background-color);
+  width: 1200px;
+  height: 877px;
+  position: relative;
 }
 
 a {
