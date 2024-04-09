@@ -17,10 +17,10 @@
 /*css for text customer*/
 .text_customer {
   background-color: var(--background-text);
-  border-radius:0.25rem;
+  border-radius: 0.25rem;
   margin-left: 7.25rem;
   margin-right: 7.25rem;
-  margin-top:1rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -33,21 +33,11 @@
   font-size: 1.3rem;
   line-height: 2;
   white-space: 0.25rem;
+  text-decoration: underline;
 }
 
 .underline::before {
   content: url(../icons/quotes.svg);
-}
-
-.underline::after {
-  content: "" ;
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #d31342;
-
-
 }
 
 .nombre-custumer {
@@ -55,9 +45,8 @@
   font-size: 1.3rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  /*
-  margin: 40px;*/
 }
+
 /*css For slider*/
 .first img {
   width: 5.313rem;
@@ -90,25 +79,24 @@
 /*css for manual slide navigation*/
 
 .navigation-manual {
-  position: absolute; 
-  margin-top:40rem;
-  /*
-  display: flex;*/
+  position: absolute;
+  margin-top: 40rem;
+  display: flex;
   justify-content: center;
 }
 
 .manual-btn {
   border: 1px solid var(--input);
   background: var(--input);
-  padding:5px;
-  border-radius:10px;
+  padding: 7px;
+  border-radius: 10px;
   transition: var(--transition);
   cursor: pointer;
 }
+
 .manual-btn:not(:last-child) {
   margin-right: 0.7rem;
 }
-
 
 .manual-btn:hover {
   border: var(--hover-input);
@@ -118,9 +106,8 @@
 .home {
   position: absolute;
   margin-left: 0.125rem;
-  margin-top: 0.125rem;  
+  margin-top: 0.12rem;
 }
-
 
 #radio1:checked ~ .first {
   margin-left: 0;
@@ -133,14 +120,17 @@
 #radio3:checked ~ .first {
   margin-left: -40%;
 }
-/* Styles for tablet*/
-@media screen and (min-width: 481px) and (max-width: 768px) {
 
-}
-/*Styles for desctop*/
-@media screen and (min-width: 769px) and (max-width: 1280px) {
-.navigation-manual {
-  margin-top: 22rem;
+/* Styles for tablet*/
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .navigation-manual {
+    margin-top: 24rem;
   }
-  
+}
+
+/*Styles for desctop*/
+@media screen and (min-width: 1200px) {
+  .navigation-manual {
+    margin-top: 22rem;
+  }
 }
