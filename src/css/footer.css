@@ -17,9 +17,11 @@
 
 .global-footer {
   background-color: var(--footer-background-color);
-  width: 1200px;
   height: 877px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 a {
