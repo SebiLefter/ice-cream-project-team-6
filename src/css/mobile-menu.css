@@ -1,27 +1,14 @@
-.menu-for-mobile {
+.js-menu-container {
+  display: none;
+}
+.js-menu-container.is-open {
   display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  z-index: 99;
-  margin-top: 27px;
-  width: 254px;
-}
-.menu-container {
+  flex-direction: column;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #e17992;
-  z-index: 999;
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
-  visibility: hidden;
-}
-.menu-container.is-open {
-  transform: translateX(0);
-  width: 254px;
-  height: 1020px;
+  background-color: #e18298;
+  z-index: 9999;
+  width: 250px;
+  height: 100%;
 }
 .mobile-menu ul {
   padding: 0;
@@ -80,15 +67,7 @@
   right: 10px;
   cursor: pointer;
 }
-.mobile-stoke {
-  outline-color: #e1e1e1;
-  width: 254px;
-  height: 2px;
-}
-/* hr.line-mobile-menu {
-  width: 254px;
-  margin: auto;
-} */
+
 /* Modal */
 .is-hidden {
   visibility: hidden;
@@ -178,6 +157,7 @@
   border-radius: 4px;
   width: 360px;
   height: 40px;
+  resize: none;
 }
 .mobile-form-group .mobile-form-input {
   left: 0.5rem;
@@ -200,6 +180,7 @@
   border-radius: 4px;
   width: 360px;
   height: 120px;
+  resize: none;
 }
 .mobile-form-textarea:focus {
   outline: none;
