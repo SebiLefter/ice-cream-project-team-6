@@ -5,6 +5,13 @@
   --hover-input: #d31342;
   --input: #d9d9d9;
   --background-text: #e5e5e5;
+  --liniar-gradient: repeating-linear-gradient(
+    #e1e1e1,
+    #fafafa,
+    30px,
+    #fafafa 10px,
+    #e1e1e1 45px
+  );
 }
 
 .section_customer {
@@ -16,7 +23,6 @@
 
 /*css for text customer*/
 .text_customer {
-  background-color: var(--background-text);
   border-radius: 0.25rem;
   margin-left: 7.25rem;
   margin-right: 7.25rem;
@@ -27,13 +33,14 @@
 
 .underline {
   position: relative;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 10%;
+  margin-right: 10%;
   font-family: var(--font-family);
   font-size: 1.3rem;
   line-height: 2;
   white-space: 0.25rem;
-  text-decoration: underline;
+  background: var(--liniar-gradient);
+  min-height: 138px;
 }
 
 .underline::before {
@@ -80,7 +87,7 @@
 
 .navigation-manual {
   position: absolute;
-  margin-top: 40rem;
+  margin-top: 90%;
   display: flex;
   justify-content: center;
 }
@@ -124,13 +131,13 @@
 /* Styles for tablet*/
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .navigation-manual {
-    margin-top: 24rem;
+    margin-top: 50%;
   }
 }
 
 /*Styles for desctop*/
 @media screen and (min-width: 1200px) {
   .navigation-manual {
-    margin-top: 22rem;
+    margin-top: 24rem;
   }
 }
