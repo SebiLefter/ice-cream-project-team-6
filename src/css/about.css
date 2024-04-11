@@ -11,7 +11,7 @@
   }
   .about-container{
     width: 100%;
-    height: 680px;
+    height: 780px;
     background-color: var(--about-bg-color);
 
   }
@@ -20,6 +20,8 @@
     background-repeat: no-repeat;
     background-size:100% 521px;
     display: flex;
+    margin-top: 50px;
+    
   }
   .about-headings{ 
     width: 534px;  
@@ -91,6 +93,7 @@
     height: 501px;
     margin-top: 60px;
     margin-left: 16px;
+    
 }
 .about-text{
     margin-left: 15%;
@@ -153,18 +156,22 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 1150px;
+    height: 1050px;
     margin-bottom: 50px;
     
   }
+  .about-container{
+    height: 850px;
+  }
   .cow{
-    width: 30%;
-    height: 30%;
+    width: 280px;
+    height: 279px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 90px;
-
+    display: block;
+    
   }
+  
   .about-text{
     display: block;
     margin-left: auto;
@@ -204,10 +211,7 @@
   .about-content{
     background: none;
   }
-  .cow{
-    width: 40%;
-    height: 40%;
-  }
+  
   .about-content{
     margin-top: 80px;
   }
