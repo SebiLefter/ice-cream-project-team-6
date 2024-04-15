@@ -1,10 +1,4 @@
-#partners-contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  width: 100%;
-}
+/* Stiluri generale pentru carduri */
 .partners-card {
   border-radius: 24px;
   padding: 20px;
@@ -13,18 +7,22 @@
   height: 538px;
   box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
   background: #fff;
+  position: relative;
 }
+
 .partners-card-content {
   display: grid;
   grid-gap: 10px;
   width: 288px;
   height: 458px;
 }
+
 .stroke {
   width: 288px;
   height: 2px;
   background-color: #e1e1e1;
 }
+
 .schedule strong {
   font-family: var(--font-family);
   font-weight: 500;
@@ -33,6 +31,7 @@
   letter-spacing: 0.04em;
   color: #000;
 }
+
 .schedule p {
   font-family: var(--font-family);
   font-weight: 500;
@@ -40,6 +39,7 @@
   line-height: 186%;
   color: #ffa5ba;
 }
+
 .partners-category {
   border-radius: 6px;
   width: 73px;
@@ -47,6 +47,7 @@
   background: #f0d1a5;
   text-align: center;
 }
+
 .partners-category h3 {
   color: #fff;
   margin: auto;
@@ -57,6 +58,7 @@
   letter-spacing: 0.04em;
   text-align: center;
 }
+
 .partners-category-food-truck {
   border-radius: 6px;
   width: 138px;
@@ -64,6 +66,7 @@
   background: #c2e297;
   text-align: center;
 }
+
 .partners-category-food-truck h3 {
   margin: auto;
   font-family: var(--font-family);
@@ -74,7 +77,8 @@
   text-align: center;
   color: #fff;
 }
-.partener-location p {
+
+.partners-location p {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
@@ -82,17 +86,8 @@
   letter-spacing: 0.04em;
   color: #907e82;
 }
-.teltext {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 183%;
-  color: #907e82;
-}
-.teltext:focus,
-.mailtext:focus {
-  color: #d41443;
-}
+
+.teltext,
 .mailtext {
   font-family: var(--font-family);
   font-weight: 500;
@@ -101,39 +96,139 @@
   color: #907e82;
 }
 
-/* Stilizare pentru desktop */
-@media screen and (min-width: 1200px) {
-  ..partners-contact {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 75%;
-    z-index: 999;
-    /* Afișare pe verticală */
-    /* Aliniere centrală */
+.teltext:focus,
+.mailtext:focus {
+  color: #d41443;
+}
+
+.mailtext {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 183%;
+  color: #907e82;
+}
+
+.btn-details {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-partners {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: var(--btn-footer-color);
+  background-color: var(--white-color);
+  border-radius: 22px;
+  border: none;
+  margin-top: 60px;
+}
+
+.btn-partners:hover,
+.btn-partnersS:focus {
+  color: var(--white-color);
+  background-color: var(--btn-footer-hover-background);
+  border-radius: 22px;
+  cursor: pointer;
+  transition: var(--transition);
+  outline: none;
+}
+
+.btn-locations-partners {
+  width: 198px;
+  height: 44px;
+  margin-right: 12px;
+}
+
+.btn-frachise-partners {
+  width: 168px;
+  height: 44px;
+}
+
+/* Stilizare pentru mobile */
+@media screen and (max-width: 768px) {
+  #partners-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px; /* Adăugăm un spațiu între secțiune și footer */
+  }
+  .partners-card {
+    width: 280px;
+    /*height: 412px;*/
+    margin-top: 20px; /* Afișarea pe un singur rând */
+  }
+  .partners-card-content {
+    width: 216px;
+    height: 332px;
+    display: grid;
+    grid-gap: 30px;
+  }
+  .partners-location p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #907e82;
+  }
+  .stroke {
+    width: 216px;
+    height: 2px;
+  }
+  .btn-details {
+    width: 161px;
+    height: 98px;
   }
 }
 
 /* Stilizare pentru tablete */
 @media screen and (min-width: 769px) and (max-width: 1199px) {
+  #partners-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    margin-top: -120px; /* Adăugăm un spațiu între secțiune și footer */
+  }
+
   .partners-card {
-    width: 30%;
+    border-radius: 24px;
     width: 224px;
     height: 528px;
+    margin-right: 50px;
+    padding: 20px;
+  }
+  .partners-card-content {
+    width: 160px;
+    height: 448px;
   }
   .stroke {
     width: 160px; /* Afișarea pe 3 coloane */
   }
-}
 
-/* Stilizare pentru mobile */
-@media screen and (max-width: 768px) {
-  .partners-card {
-    width: 280px;
-    height: 412px; /* Afișarea pe un singur rând */
+  .partners-location p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 166%;
+    letter-spacing: 0.04em;
+    color: #907e82;
   }
-  .partners-card-content {
-    width: 216px;
-    height: 332px;
+}
+/* Stilizare pentru desktop */
+@media screen and (min-width: 1200px) {
+  #partners-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    margin-top: -10%; /* Se suprapune 75% peste footer */
   }
 }

@@ -5,13 +5,7 @@
   --hover-input: #d31342;
   --input: #d9d9d9;
   --background-text: #e5e5e5;
-  --liniar-gradient: repeating-linear-gradient(
-    #e1e1e1,
-    #fafafa,
-    30px,
-    #fafafa 10px,
-    #e1e1e1 45px
-  );
+  --liniar-gradient: repeating-linear-gradient( #fafafa 30%, #e1e1e1 50%);
 }
 
 .section_customer {
@@ -28,19 +22,22 @@
   margin-right: 7.25rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  text-align: center;
+  text-align: center; 
+ 
 }
 
 .underline {
   position: relative;
+ padding: 5%;
+  /* 
   margin-left: 10%;
-  margin-right: 10%;
+  margin-right: 10%;*/
   font-family: var(--font-family);
   font-size: 1.3rem;
   line-height: 2;
   white-space: 0.25rem;
-  background: var(--liniar-gradient);
-  min-height: 138px;
+  background-image: var(--liniar-gradient);
+ 
 }
 
 .underline::before {
