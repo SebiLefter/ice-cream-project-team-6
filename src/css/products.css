@@ -1,11 +1,14 @@
-/*aici adaug font-family*/
+:root {
+    --font-family: 'DM Sans', sans-serif;
+    --second-font-family: 'Titan One', sans-serif;
+}
 
 
 .upper-prod {
     display: flex;
     justify-content: center;
     color: #FFA5BA;
-    font-family: ;
+    font-family: var(--second-font-family);
     font-weight: 400;
     font-size: 30px;
 }
@@ -14,7 +17,7 @@
     display: flex;
     justify-content: center;
     color: #D41443;
-    font-family: ;
+    font-family: var(--second-font-family);
     font-weight: 400;
     font-size: 58px;
 }
@@ -74,7 +77,7 @@
 .prod-1 {
     margin-top: 32px;
     font-size: 30px;
-    font-family: ;
+    font-family: var(--second-font-family);
     font-weight: 400;
 }
 
@@ -95,7 +98,7 @@
     width: 304px;
     font-size: 16px;
     font-weight: 700;
-    font-family: ;
+    font-family:var(--font-family) ;
 }
 
 .arrow {
