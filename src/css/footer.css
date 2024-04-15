@@ -17,7 +17,7 @@
 
 .global-footer {
   background-color: var(--footer-background-color);
-  height: 877px;
+  height: 1513px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -118,18 +118,29 @@ hr.line-footer {
 }
 
 .copyright-footer {
-  display: flex;
-  justify-content: center;
+  display: block;
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.86;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--copyright-footer-color);
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Stiliare pentru tableta */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+  .global-footer {
+    background-color: var(--footer-background-color);
+    height: 877px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
   .homemade-text {
     font-family: var(--second-font-family);
     font-weight: 400;
@@ -172,14 +183,34 @@ hr.line-footer {
     border-top: 1px solid var(--line-footer-color);
     margin: 0;
   }
-  
+
   .social-footer-display {
     margin-top: 30px;
+  }
+
+  .copyright-footer {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--copyright-footer-color);
+    width: 768px;
   }
 }
 
 /* Stilizare pentru desktop */
 @media screen and (min-width: 1280px) {
+  .global-footer {
+    background-color: var(--footer-background-color);
+    height: 877px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
   .homemade-text {
     font-family: var(--second-font-family);
     font-weight: 400;
@@ -221,5 +252,17 @@ hr.line-footer {
   hr.line-footer {
     border-top: 1px solid var(--line-footer-color);
     margin: 0 16px;
+  }
+
+  .copyright-footer {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--copyright-footer-color);
+    width: 1280px;
   }
 }
