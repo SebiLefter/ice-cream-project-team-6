@@ -118,14 +118,16 @@ hr.line-footer {
 }
 
 .copyright-footer {
-  display: flex;
-  justify-content: center;
+  display: block;
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.86;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--copyright-footer-color);
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Stiliare pentru tableta */
@@ -172,9 +174,21 @@ hr.line-footer {
     border-top: 1px solid var(--line-footer-color);
     margin: 0;
   }
-  
+
   .social-footer-display {
     margin-top: 30px;
+  }
+
+  .copyright-footer {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--copyright-footer-color);
+    width: 768px;
   }
 }
 
@@ -221,5 +235,17 @@ hr.line-footer {
   hr.line-footer {
     border-top: 1px solid var(--line-footer-color);
     margin: 0 16px;
+  }
+
+  .copyright-footer {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--copyright-footer-color);
+    width: 1280px;
   }
 }
