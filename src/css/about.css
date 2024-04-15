@@ -161,7 +161,7 @@
     
   }
   .about-container{
-    height: 850px;
+    height: 950px;
   }
   .cow{
     width: 280px;
@@ -191,7 +191,7 @@
     text-align: center;
     width: 70%;
     font-size: 35px;
-    margin-left: 80px;
+    
   }
   .cow-modal{
     width: 150px;
@@ -199,7 +199,7 @@
   }
   .about-label{
     font-size: 18px;
-    margin-left: 135px;
+    margin-left: 65px;
   }
   .modal-about-content{
     height: 800px;
