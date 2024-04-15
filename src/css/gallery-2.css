@@ -23,6 +23,15 @@
 .first-distinct {
   margin-bottom: -10px;
 }
+.sorbet {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.sorbet:hover {
+  transform: scale(1.5);
+  z-index: 10;
+}
 /* Stilizare tabletă și device-uri peste 768px */
 @media screen and (min-width: 768px) {
   .gallery-section-mara {
