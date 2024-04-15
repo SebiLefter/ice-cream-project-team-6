@@ -5,7 +5,6 @@
   --hover-input: #d31342;
   --input: #d9d9d9;
   --background-text: #e5e5e5;
-  --liniar-gradient: repeating-linear-gradient( #fafafa 30%, #e1e1e1 50%);
 }
 
 .section_customer {
@@ -13,6 +12,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 5rem;
+  height: 35rem;
 }
 
 /*css for text customer*/
@@ -22,22 +22,21 @@
   margin-right: 7.25rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  text-align: center; 
- 
+  text-align: center;
 }
 
 .underline {
-  position: relative;
- padding: 5%;
-  /* 
-  margin-left: 10%;
-  margin-right: 10%;*/
+  padding: 2%;
+  border-radius: 4px;
   font-family: var(--font-family);
   font-size: 1.3rem;
-  line-height: 2;
+  line-height: 2.2;
   white-space: 0.25rem;
-  background-image: var(--liniar-gradient);
- 
+  background-image: repeating-linear-gradient(
+    #fafafa 0 3.4rem,
+    #e1e1e1 2rem 3.6rem,
+    #fafafa 2rem
+  );
 }
 
 .underline::before {
@@ -84,7 +83,7 @@
 
 .navigation-manual {
   position: absolute;
-  margin-top: 90%;
+  margin-top: 32rem;
   display: flex;
   justify-content: center;
 }
@@ -106,11 +105,14 @@
   border: var(--hover-input);
   background-color: var(--hover-input);
 }
-
+.btn {
+  opacity: 0;
+}
 .home {
   position: absolute;
   margin-left: 0.125rem;
   margin-top: 0.12rem;
+  z-index: -10;
 }
 
 #radio1:checked ~ .first {
@@ -128,7 +130,10 @@
 /* Styles for tablet*/
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .navigation-manual {
-    margin-top: 50%;
+    margin-top: 26rem;
+  }
+  .underline {
+    background-image:repeating-linear-gradient(#fafafa 0 3.4rem, #e1e1e1 2rem 3.6rem, #fafafa 2rem);
   }
 }
 
@@ -136,5 +141,8 @@
 @media screen and (min-width: 1200px) {
   .navigation-manual {
     margin-top: 24rem;
+  }
+  .underline {
+    background: repeating-linear-gradient(#fafafa 0 4rem, #e1e1e1 2.2rem 4.2rem, #fafafa 2rem);
   }
 }
