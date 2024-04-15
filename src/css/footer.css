@@ -52,6 +52,7 @@ li {
   text-transform: uppercase;
   color: var(--passion-color-footer);
   width: 200px;
+  padding-top: 15px;
 }
 
 .social-links {
@@ -63,7 +64,7 @@ li {
 .social-link-footer {
   display: flex;
   justify-content: space-between;
-  margin: 110px 16px 60px 16px;
+  margin: 110px 16px 40px 16px;
   flex-direction: column;
 }
 
@@ -95,6 +96,7 @@ li {
 .contact-footer {
   display: flex;
   justify-content: flex-end;
+  margin-top: 30px;
 }
 
 .contact-text-footer {
@@ -112,7 +114,7 @@ li {
 
 hr.line-footer {
   border-top: 1px solid var(--line-footer-color);
-  margin: 0 16px;
+  margin: 0;
 }
 
 .copyright-footer {
@@ -131,28 +133,28 @@ hr.line-footer {
   .homemade-text {
     font-family: var(--second-font-family);
     font-weight: 400;
-    font-size: 30px;
+    font-size: 26px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--homemade-color-footer);
-    width: 479px;
+    width: 340px;
   }
 
   .passion-text {
     font-family: var(--second-font-family);
     font-weight: 400;
-    font-size: 58px;
+    font-size: 48px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--passion-color-footer);
-    width: 500px;
+    width: 340px;
   }
 
   .social-link-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 110px 16px 60px 16px;
+    margin: 110px 16px 15px 16px;
     flex-wrap: nowrap;
     flex-direction: row;
   }
@@ -160,15 +162,24 @@ hr.line-footer {
   .contact-text-footer {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.02em;
     color: var(--contact-text-color);
   }
+
+  hr.line-footer {
+    border-top: 1px solid var(--line-footer-color);
+    margin: 0;
+  }
+  
+  .social-footer-display {
+    margin-top: 30px;
+  }
 }
 
 /* Stilizare pentru desktop */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .homemade-text {
     font-family: var(--second-font-family);
     font-weight: 400;
@@ -205,5 +216,10 @@ hr.line-footer {
     line-height: 1.86;
     letter-spacing: 0.02em;
     color: var(--contact-text-color);
+  }
+
+  hr.line-footer {
+    border-top: 1px solid var(--line-footer-color);
+    margin: 0 16px;
   }
 }
