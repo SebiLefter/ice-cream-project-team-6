@@ -32,61 +32,26 @@ li {
   list-style-type: none;
 }
 
-.btn-details {
-  display: flex;
-  justify-content: center;
-}
-
-.btn-footer {
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-  color: var(--btn-footer-color);
-  background-color: var(--white-color);
-  border-radius: 22px;
-  border: none;
-  margin-top: 60px;
-}
-
-.btn-footer:hover,
-.btn-footer:focus {
-  color: var(--white-color);
-  background-color: var(--btn-footer-hover-background);
-  border-radius: 22px;
-  cursor: pointer;
-  transition: var(--transition);
-  outline: none;
-}
-
-.btn-locations-footer {
-  width: 198px;
-  height: 44px;
-  margin-right: 12px;
-}
-
-.btn-frachise-footer {
-  width: 168px;
-  height: 44px;
-}
-
 .homemade-text {
   font-family: var(--second-font-family);
   font-weight: 400;
-  font-size: 30px;
+  font-size: 18px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--homemade-color-footer);
-  width: 479px;
+  width: 232px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .passion-text {
   font-family: var(--second-font-family);
   font-weight: 400;
-  font-size: 58px;
-  letter-spacing: 0.06em;
+  font-size: 34px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--passion-color-footer);
+  width: 200px;
 }
 
 .social-links {
@@ -98,8 +63,8 @@ li {
 .social-link-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 110px 16px 60px 16px;
+  flex-direction: column;
 }
 
 .footer-icon {
@@ -129,12 +94,13 @@ li {
 
 .contact-footer {
   display: flex;
+  justify-content: flex-end;
 }
 
 .contact-text-footer {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: var(--contact-text-color);
@@ -158,4 +124,86 @@ hr.line-footer {
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: var(--copyright-footer-color);
+}
+
+/* Stiliare pentru tableta */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .homemade-text {
+    font-family: var(--second-font-family);
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--homemade-color-footer);
+    width: 479px;
+  }
+
+  .passion-text {
+    font-family: var(--second-font-family);
+    font-weight: 400;
+    font-size: 58px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--passion-color-footer);
+    width: 500px;
+  }
+
+  .social-link-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 110px 16px 60px 16px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  .contact-text-footer {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--contact-text-color);
+  }
+}
+
+/* Stilizare pentru desktop */
+@media screen and (min-width: 1200px) {
+  .homemade-text {
+    font-family: var(--second-font-family);
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--homemade-color-footer);
+    width: 500px;
+  }
+
+  .passion-text {
+    font-family: var(--second-font-family);
+    font-weight: 400;
+    font-size: 58px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--passion-color-footer);
+    width: 500px;
+  }
+
+  .social-link-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 110px 16px 60px 16px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  .contact-text-footer {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--contact-text-color);
+  }
 }
