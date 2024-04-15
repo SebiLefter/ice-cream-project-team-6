@@ -133,7 +133,11 @@
     margin-top: 26rem;
   }
   .underline {
-    background-image:repeating-linear-gradient(#fafafa 0 3.4rem, #e1e1e1 2rem 3.6rem, #fafafa 2rem);
+    background-image: repeating-linear-gradient(
+      #fafafa 0 3.4rem,
+      #e1e1e1 2rem 3.6rem,
+      #fafafa 2rem
+    );
   }
 }
 
@@ -143,6 +147,10 @@
     margin-top: 24rem;
   }
   .underline {
-    background: repeating-linear-gradient(#fafafa 0 4rem, #e1e1e1 2.2rem 4.2rem, #fafafa 2rem);
+    background: repeating-linear-gradient(
+      #fafafa 0 4rem,
+      #e1e1e1 2.2rem 4.2rem,
+      #fafafa 2rem
+    );
   }
 }
