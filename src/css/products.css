@@ -154,13 +154,93 @@
     text-decoration: none;
     cursor: pointer;
 }
+
 /*mobile*/
 @media screen and (max-width: 768px){
 
 }
 /*tablet*/
 @media screen and (min-width: 768px) and (max-width: 1280px){
-
+    .upper-prod {
+            display: flex;
+            justify-content: center;
+            color: #ffa5ba;
+            font-family: var(--second-font-family);
+            font-weight: 400;
+            font-size: 26px;
+        }
+    .title-prod {
+            display: flex;
+            justify-content: center;
+            color: #d41443;
+            font-family: var(--second-font-family);
+            font-weight: 400;
+            font-size: 48px;
+        }
+    .product-type {
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            gap: 16px;
+            display: grid;
+            padding: 0px;
+            margin-left: 32px;
+            margin-right: 32px;
+        }
+    .product-list {
+            width: 368px;
+            height: 796px;
+            padding:0px;
+        }
+    .prod-1::after {
+            content: '...';
+            color: white;
+            display: flex;
+            left: 5.7em;
+        }
+    .prod-description {
+            width: 188px;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: var(--font-family);
+        }
+    .prod-1 {
+            margin-top: 32px;
+            font-size: 20px;
+            font-family: var(--second-font-family);
+            font-weight: 400;
+        }
+    .text-cont1 {
+            background-color: #ffb8ca;
+            border-radius: 24px;
+            height: 473px;
+            width: 224px;
+            color: white;
+            align-content: center;
+            position: relative;
+            bottom: 130px;
+        }
+    
+    .text-cont2 {
+            background-color: #f0d1a5;
+            border-radius: 24px;
+            height: 473px;
+            width: 224px;
+            color: white;
+            align-content: center;
+            position: relative;
+            bottom: 130px;
+        }
+    
+    .text-cont3 {
+            background-color: #c2e297;
+            border-radius: 24px;
+            height: 473px;
+            width: 224px;
+            color: white;
+            align-content: center;
+            position: relative;
+            bottom: 130px;
+        }
 }
 /*desktop*/
 @media screen and (min-width: 1280px){
