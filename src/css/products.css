@@ -135,11 +135,12 @@
 }
 
 .modal-MI-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+    background-color: #FFF5F6;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color: #d41443;
 }
 
 .close {
@@ -158,6 +159,86 @@
 
 /*mobile*/
 @media screen and (max-width: 768px){
+    .upper-prod {
+            display: flex;
+            justify-content: center;
+            color: #ffa5ba;
+            font-family: var(--second-font-family);
+            font-weight: 400;
+            font-size: 18px;
+        }
+    .title-prod {
+            display: flex;
+            justify-content: center;
+            color: #d41443;
+            font-family: var(--second-font-family);
+            font-weight: 400;
+            font-size: 34px;
+    }
+    .prod-description {
+            width: 216px;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: var(--font-family);
+        }
+    .text-cont1 {
+            background-color: #ffb8ca;
+            border-radius: 24px;
+            height: 489px;
+            width: 280px;
+            color: white;
+            align-content: center;
+            position: relative;
+            bottom: 130px;
+        }
+        
+    .text-cont2 {
+            background-color: #f0d1a5;
+            border-radius: 24px;
+            height: 489px;
+            width: 280px;
+            color: white;
+            align-content: center;
+            position: relative;
+            bottom: 130px;
+        }
+        
+    .text-cont3 {
+            background-color: #c2e297;
+            border-radius: 24px;
+            height: 489px;
+            width: 280px;
+            color: white;
+            align-content: center;
+            position: relative;
+            bottom: 130px;
+        }
+    .product-type {
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    .prod-1 {
+            margin-top: 32px;
+            font-size: 20px;
+            font-family: var(--second-font-family);
+            font-weight: 400;
+        }
+    .prod-1::after {
+            content: '...';
+            color: white;
+            display: flex;
+            left: 4em;
+}
+    .product-pic{
+            bottom: 30px;
+            position: relative;
+    }
+    
 
 }
 /*tablet*/
@@ -242,6 +323,10 @@
             position: relative;
             bottom: 130px;
         }
+    .product-pic {
+            bottom: 50px;
+            position: relative;
+                        }
 }
 /*desktop*/
 @media screen and (min-width: 1280px){
