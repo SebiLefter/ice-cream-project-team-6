@@ -238,6 +238,12 @@
             bottom: 30px;
             position: relative;
     }
+    .product-list{
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            display: grid;
+    }
     
 
 }
@@ -260,10 +266,10 @@
             font-size: 48px;
         }
     .product-type {
-            grid-template-columns: repeat(3, 1fr);
             justify-items: center;
             gap: 16px;
-            display: grid;
+            display: flex;
+            justify-content: space-between;
             padding: 0px;
             margin-left: 32px;
             margin-right: 32px;
