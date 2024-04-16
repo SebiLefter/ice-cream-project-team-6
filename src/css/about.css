@@ -151,7 +151,7 @@
   height: 300px;
   margin-bottom: 5%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 530px) {
    .about-content{
     display: flex;
     flex-direction: column;
@@ -161,7 +161,7 @@
     
   }
   .about-container{
-    height: 850px;
+    height: 950px;
   }
   .cow{
     width: 280px;
@@ -191,7 +191,7 @@
     text-align: center;
     width: 70%;
     font-size: 35px;
-    margin-left: 80px;
+    
   }
   .cow-modal{
     width: 150px;
@@ -199,8 +199,65 @@
   }
   .about-label{
     font-size: 18px;
-    margin-left: 135px;
+    margin-left: 65px;
   }
+  .modal-about-content{
+    height: 800px;
+  }
+}
+  @media screen and (min-width: 531px) and (max-width: 768px) {
+    .about-content{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 1050px;
+      margin-bottom: 50px;
+      
+    }
+    .about-container{
+      height: 850px;
+    }
+    .cow{
+      width: 280px;
+      height: 279px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      
+    }
+    
+    .about-text{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -30px;
+    }
+    .about-headings{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    
+      
+    }
+    .about-title{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 70%;
+      font-size: 35px;
+      margin-left: 80px;
+    }
+    .cow-modal{
+      width: 150px;
+      height: 150px;
+    }
+    .about-label{
+      font-size: 18px;
+      margin-left: 135px;
+    }
+    .modal-about-content{
+      height: 600px;
+    }
 
   
 }
@@ -214,6 +271,9 @@
   
   .about-content{
     margin-top: 80px;
+  }
+  .modal-about-content{
+    height: 650px;
   }
 }
 @media screen and (min-width: 1200px) {

@@ -29,7 +29,7 @@
   transition: 0.3s;
 }
 .sorbet:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   z-index: 10;
 }
 /* Stilizare tabletă și device-uri peste 768px */
